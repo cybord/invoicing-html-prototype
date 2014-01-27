@@ -13,7 +13,6 @@ module.exports = (grunt) ->
     @loadNpmTasks('grunt-contrib-watch')
     @loadNpmTasks('grunt-jekyll')
     @loadNpmTasks('grunt-open')
-    @loadNpmTasks('grunt-webfont')
 
     jekyllMask = '{*/,}{*/,}{*/,}*{html,js,png,jpg,jpeg}'
 
@@ -25,27 +24,12 @@ module.exports = (grunt) ->
             options:
                 livereload: 35728
                 nospawn: true
-            icons:
-                files: ['icons_svg_source/*.svg']
-                tasks: ['webfont', 'copy']
             jekyll:
                 files: [jekyllMask, '!_site/' + jekyllMask]
                 tasks: ['jekyll', 'copy']
             sass:
-                files: ['scss/{*/,}{*/,}*.scss']
+                files: ['_scss/{*/,}{*/,}*.scss']
                 tasks: ['sass:dist', 'copy']
-
-        webfont:
-            icons:
-                src: 'icons_svg_source/*.svg'
-                dest: '.tmp/fonts'
-                destCss: 'scss'
-                options:
-                    hashes: false
-                    htmlDemo: false
-                    stylesheet: 'scss'
-                    template: 'font-generation-templates/custom.css'
-                    relativeFontPath: '../fonts'
 
         # Copy the fonts and css in place, because Jekyll deletes them if we
         # generate in the output folder directly.
@@ -65,8 +49,7 @@ module.exports = (grunt) ->
                     style: 'expanded'
                     cacheLocation: '.tmp/css/'
                 files:
-                    '.tmp/css/skin.css': 'scss/skin.scss'
-                    '.tmp/css/styleguide.css': 'scss/styleguide.scss'
+                    '.tmp/css/application.css': '_scss/application.scss'
 
         jekyll:
             dist:
@@ -98,5 +81,5 @@ module.exports = (grunt) ->
     @renameTask 'watch', 'doWatch'
 
     @registerTask('watch', ['connect', 'build', 'open', 'doWatch'])
-    @registerTask('build', ['clean', 'webfont', 'jekyll', 'sass', 'copy'])
+    @registerTask('build', ['clean', 'jekyll', 'sass', 'copy'])
     @registerTask('default', ['build'])
