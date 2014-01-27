@@ -1,0 +1,36 @@
+<!-- Modal for add organisation -->
+<div id="add-organisation" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Nieuwe organisatie</h4>
+      </div>
+      <div class="modal-body has-sections">
+
+        <h3 class="section-header">Basisgegevens</h3>
+
+        <section>
+
+          <div class="form-group">
+            <label class="control-label">Naam<abbr title="Verplicht veld">*</abbr></label>
+            <input type="text" class="form-control">
+          </div>
+      
+          <div class="form-group">
+            <label class="control-label">E-mail<abbr title="Verplicht veld">*</abbr></label>
+            <input type="email" class="form-control">
+          </div>
+
+          {% include form-groups/form-group-address-simple.html %}
+
+        </section>
+
+      </div><!-- .modal-body -->
+      <div class="modal-footer">
+        <a href="#" class="btn-link pull-left" data-dismiss="modal">Annuleren</a>
+        <a href="#" class="btn btn-success pull-right" data-dismiss="modal"><i class="glyphicon glyphicon-add"></i> Toevoegen</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

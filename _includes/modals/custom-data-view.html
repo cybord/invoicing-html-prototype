@@ -1,0 +1,47 @@
+<!-- Modal for adding a custom data view -->
+<div id="save-custom-view" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Selectie data opslaan</h4>
+      </div>
+      <div class="modal-body has-sections">
+    
+        <section>
+          <div class="tag-list">
+            <div class="tag">
+              <span class="label">Met tag <em>theater</em></span>
+              <a href="#">&times;</a>
+            </div>
+            <div class="tag">
+              <span class="label">Met tag <em>dans</em></span>
+              <a href="#">&times;</a>
+            </div>
+            <div class="tag addition">
+              <span class="operator">+</span>
+              <span class="label">Ingeschreven op nieuwsbrief</span>
+              <a href="#">&times;</a>
+            </div>
+            <div class="tag subtraction">
+              <span class="operator">-</span>
+              <span class="label">Met tag <em>directie</em></span>
+              <a href="#">&times;</a>
+            </div>
+          </div>
+        </section>
+    
+        <section>
+          <label>Geef deze selectie een naam:</label>
+          <input type="text" class="form-control">
+          <div class="help-block">Gebruik een naam die de data beschrijft bvb. rockfans uit Limburg</div>
+        </section>
+
+      </div><!-- .modal-body -->
+      <div class="modal-footer">
+        <a href="#" class="btn-link pull-left" data-dismiss="modal">Annuleren</a>
+        <a href="#" class="btn btn-success pull-right" data-dismiss="modal"><i class="glyphicon glyphicon-add"></i> Toevoegen</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

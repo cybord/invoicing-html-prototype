@@ -1,0 +1,29 @@
+{% if page.show-modal %}<div class="modal-backdrop fade in"></div>{% endif %}
+
+{% if page.show-modal %}
+  {% if page.modal == "add-organisation" %}
+    {% include modals/add-organisation.html %}
+  {% endif %}
+  {% if page.modal == "custom-column-view" %}
+    {% include modals/custom-column-view.html %}
+  {% endif %}
+  {% if page.modal == "custom-data-view" %}
+    {% include modals/custom-data-view.html %}
+  {% endif %}
+  {% if page.modal == "filter-bought-tickets" %}
+    {% include modals/filter-bought-tickets.html %}
+  {% endif %}
+  {% if page.modal == "filter-from-organisation" %}
+    {% include modals/filter-from-organisation.html %}
+  {% endif %}
+  {% if page.modal == "filter-in-campaign" %}
+    {% include modals/filter-in-campaign.html %}
+  {% endif %}
+{% else %}
+  {% include modals/add-organisation.html %}
+  {% include modals/custom-column-view.html %}
+  {% include modals/custom-data-view.html %}
+  {% include modals/filter-bought-tickets.html %}
+  {% include modals/filter-from-organisation.html %}
+  {% include modals/filter-in-campaign.html %}
+{% endif %}

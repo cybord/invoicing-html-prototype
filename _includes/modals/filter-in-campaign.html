@@ -1,0 +1,58 @@
+<div id="filter-in-campaign" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">In campagne</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label">Recente campagnes</label>
+            <select class="form-control">
+              <option>Actueel relatiebestand Doelen</option>
+              <option>Alles groep 1</option>
+              <option>Alles subgroep 1 a</option>
+              <option>Alles subgroep 1 b</option>
+              <option>Alles subgroep 1c</option>
+              <option>Alles groep 2</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label class="control-label">Alle campagnes</label>
+            <select multiple class="select2">
+              <option>Campagne 1</option>
+              <option>Campagne 2</option>
+              <option>Campagne 3</option>
+              <option>Campagne 4</option>
+              <option>Campagne 5</option>
+              <option>Campagne 6</option>
+            </select>
+            <span class="help-block">Typ de naam van de campane in om te zoeken.</span>
+          </div>
+        </div>
+
+        <!-- Preview filter -->
+        <div class="preview-filter well well-sm">
+          <p>Preview filter</p>
+          <div class="tag">
+            <span class="label">Campagne 1</span>
+          </div>
+       </div>
+
+      </div><!-- .modal-body -->
+      <div class="modal-footer">
+        <a href="#" class="btn-link pull-left" data-dismiss="modal">Annuleren</a>
+        <div class="pull-right">
+          <div class="btn-toolbar query-actions">
+            <a class="btn btn-primary" href="#" data-dismiss="modal">Verfijn selectie</a>
+            <a class="btn btn-icon btn-success" href="#" data-dismiss="modal"><i class="glyphicon glyphicon-add"></i> Voeg toe aan selectie</a>
+            <a class="btn btn-icon btn-danger" href="#" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i> Verwijder uit selectie</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,47 @@
+<!-- Modal for custom column view -->
+<div id="contacts-custom-view" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Bewerk weergave kolommen</h4>
+      </div>
+      <div class="modal-body has-sections">
+        <section>
+          <label>Voeg een kolom toe:</label>
+          <p class="form-inline">
+            <select class="form-control">
+              <option>Adres</option>
+              <option>Gemeente</option>
+              <option>...</option>
+            </select>
+            <a href="#" class="btn btn-success btn-icon"><i class="glyphicon glyphicon-add"></i> </a>
+          </p>
+        </section>
+        <section>
+          <div class="contacts-custom-view-instructions">
+            <p>Versleep de <i class="glyphicon glyphicon-list"></i> iconen om de volgorde te wijzigen. Gebruik de checkboxes om kolommen te tonen of te verbergen.</p>
+          </div>
+          <ul class="bordered-list sortable-list">
+            {% for num in (1..8) %}
+            <li>
+              <input type="checkbox" checked>
+              <span class="label">{% cycle 'ID', 'Organisatie', 'Aanspr.', 'Voornaam', 'Familienaam', 'E-mail', 'Tussenvoegsel', 'Functie' %}</span>
+              <i class="glyphicon glyphicon-list"></i>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        <section>
+          <label>Geef deze weergave een naam:</label>
+          <input type="text" class="form-control">
+          <div class="help-block">Gebruik een naam die de data beschrijft bvb. e-mailweergave</div>
+        </section>
+      </div><!-- .modal-body -->
+      <div class="modal-footer">
+        <a href="#" class="btn pull-left" data-dismiss="modal">Annuleren</a>
+        <a href="#" class="btn btn-primary pull-right" data-dismiss="modal">Opslaan</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

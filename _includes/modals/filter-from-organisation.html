@@ -1,0 +1,59 @@
+<div id="filter-from-organisation" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Van organisatie</h4>
+      </div>
+      <div class="modal-body has-sections">
+        <div class="checkbox-accordion">
+          <div class="checkbox-accordion-child">
+            <header>
+              <label data-toggle-element="y1">
+                <input type="checkbox"> Met tags
+              </label>
+            </header>
+            <div class="content hide" data-element-to-be-toggled="y1">
+              <select class="select2" multiple>
+                <option>Tag 1</option>
+                <option>Tag 2</option>
+                <option>Tag 3</option>
+                <option>Tag 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="checkbox-accordion-child">
+            <header>
+              <label data-toggle-element="y2">
+                <input type="checkbox"> Naam
+              </label>
+            </header>
+            </header>
+            <div class="content hide" data-element-to-be-toggled="y2">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <!-- Preview filter -->
+        <div class="preview-filter well well-sm">
+          <p>Preview filter</p>
+          <div class="tag">
+            <span class="label">Kocht tickets aantal tussen 1-5 bedrag tussen €10-€30 voorstelling met tag dans</span>
+          </div>
+       </div>
+
+      </div><!-- .modal-body -->
+      <div class="modal-footer">
+        <a href="#" class="btn-link pull-left" data-dismiss="modal">Annuleren</a>
+        <div class="pull-right">
+          <div class="btn-toolbar query-actions">
+            <a class="btn btn-primary" href="#" data-dismiss="modal">Verfijn selectie</a>
+            <a class="btn btn-icon btn-success" href="#" data-dismiss="modal"><i class="glyphicon glyphicon-add"></i> Voeg toe aan selectie</a>
+            <a class="btn btn-icon btn-danger" href="#" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i> Verwijder uit selectie</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
