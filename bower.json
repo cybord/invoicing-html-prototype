@@ -8,5 +8,8 @@
     "jquery.extendedinput.js": "latest",
     "bootstrapx-clickover": "latest",
     "bootstrap-sass": "git://github.com/twbs/bootstrap-sass.git#v3.0.3-0"
+  },
+  "resolutions": {
+    "jquery": "~2.0.3"
   }
 }
