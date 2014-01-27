@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      {% include head.html %}
-    </head>
-    <body class="{{ page.bodyclass }}">
+<head>
+  {% include head.html %}
+</head>
+<body class="{{ page.bodyclass }}">
 
-      {% include header.html %}
+  {{ content }}
 
-      <div class="layout-single-form">
-        {{ content }}
-      </div>
-
-      {% include scripts.html %}
-    </body>
+  {% include scripts.html %}
+</body>
 </html>
