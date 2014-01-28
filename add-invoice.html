@@ -34,10 +34,10 @@ title: Add invoice
         <label for="invoiceClient" class="col-sm-2 control-label">Client</label>
         <div class="col-sm-10">
           <select id="invoiceClient" class="form-control">
-            <option value="cactus">Cactus Inc.</option>
-            <option value="octopus">Octopus Inc.</option>
-            <option value="ladybug">Ladybug Inc.</option>
-            <option value="ztransfer">Z-Transfer Inc.</option>
+            {% for client in site.data.clients %}
+              <option>{{client.company}}</option>
+              testqsdf
+            {% endfor %}
           </select>
           <p class="help-block">
             <a class="btn btn-link" data-toggle="modal" data-target="#add-client">
