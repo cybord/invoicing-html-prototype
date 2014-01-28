@@ -1,25 +1,10 @@
-// Fix the font path temporarily
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.eot');
-  src: url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.eot?#iefix') format("embedded-opentype"), url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.woff') format("woff"), url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.ttf') format("truetype"), url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format("svg");
-}
+// tmp fixes
+@import "tmp";
 
-// other tmp classes
-
-.leader{
-  margin-top:0.8em;
-}
-.leader-large{
-  margin-top:1.6em;
-}
-.trailer{
-  margin-bottom:0.8em;
-}
-.trailer-large{
-  margin-bottom:1.6em;
-}
-
-
-
+// full bootstrap import
 @import "bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
+
+
+$dropdown-caret-color: $gray-darker;
+// extensions
+@import "extensions/sortable-table";

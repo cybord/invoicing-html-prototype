@@ -1,0 +1,59 @@
+/*
+  Sortable tables styles
+  * Extends caret with a flipped caret, to make a sortable icon composed of .caret and .caret.flipped
+  * Provides styles for putting this dual arrow combo in <th>
+*/
+
+.caret.flipped {
+  border-bottom: $caret-width-base solid $dropdown-caret-color;
+  border-right: $caret-width-base solid transparent;
+  border-left:  $caret-width-base solid transparent;
+  // Firefox fix for https://github.com/twbs/bootstrap/issues/9538. Once fixed,
+  // we can just straight up remove this.
+  border-top: 0 dotted;
+}
+
+.sortable {
+  width: 12px;
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  white-space: nowrap;
+  .caret {
+    @include opacity(0.3);
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  }
+  .caret.flipped {
+    top: 0;
+  }
+  &.sorted-asc {
+    .caret {
+      @include opacity(1);
+    }
+    .caret.flipped {
+      @include opacity(0.3);
+    }
+  }
+  &.sorted-desc {
+    .caret.flipped {
+      @include opacity(1);
+    }
+  }
+}
+
+.table .sortable {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.table th a {
+  display: block;
+  white-space: nowrap;
+  position: relative;
+  &:hover {
+    background: #EEE;
+  }
+}
