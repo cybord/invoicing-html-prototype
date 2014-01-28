@@ -12,41 +12,18 @@ title: Settings
   <div class="panel-body">
     <form class="form-horizontal" role="form">
       <div class="form-group">
-        <label for="addInvoiceName" class="col-sm-2 control-label">Name</label>
+        <label for="addInvoiceName" class="col-sm-2 control-label">
+          Name
+          <abbr title="Required field">*</abbr>
+        </label>
         <div class="col-sm-10">
           <input class="form-control" id="addInvoiceName" placeholder="Enter name">
         </div>
       </div>
 
-      <div class="form-group">
-        <label for="addInvoiceAddress" class="col-sm-2 control-label">Address</label>
-        <div class="col-sm-10">
-          <input class="form-control trailer" id="addInvoiceAddress" placeholder="Street, number">
-          <input class="form-control trailer" id="addInvoiceAddressPlace" placeholder="City">
-          <input class="form-control trailer" id="addInvoiceAddressPostalCode" placeholder="Postal code">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="inputCountry" class="col-sm-2 control-label">Country</label>
-        <div class="col-sm-10">
-
-          <select class="form-control" id="inputCountry">
-            <option selected="true" value="BE">Belgium</option>
-            <option value="US">United States</option>
-            <option value="UK">United Kingdom</option>
-            <option value="FR">France</option>
-          </select>
-
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="addInvoiceVat" class="col-sm-2 control-label">VAT no.</label>
-        <div class="col-sm-10">
-          <input class="form-control" id="addInvoiceVat" placeholder="BE123 4544 11444">
-        </div>
-      </div>
+      {% include forms/address.html %}
+      {% include forms/country.html %}
+      {% include forms/vat.html %}
 
       <div class="form-group">
         <div class="col-sm-2"></div>
