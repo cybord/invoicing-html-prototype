@@ -13,23 +13,13 @@ title: Style guide
     <a class="list-group-item" href="#component-icon-font">Icon font</a></li>
     <a class="list-group-item" href="#component-forms">Forms</a></li>
     <a class="list-group-item" href="#component-dropdowns">Dropdowns</a></li>
-    <a class="list-group-item" href="#component-typography">Typography</a></li>
+    <a class="list-group-item" href="#component-type">Type</a></li>
     <a class="list-group-item" href="#component-autocomplete">Autocomplete</a></li>
     <a class="list-group-item" href="#component-alerts">Alerts</a></li>
     <a class="list-group-item" href="#component-buttons">Buttons</a></li>
-    <a class="list-group-item" href="#component-slider">Slider</a></li>
-    <a class="list-group-item" href="#component-tags">Tags</a></li>
     <a class="list-group-item" href="#component-tooltips">Tooltips</a></li>
     <a class="list-group-item" href="#component-popover">Popover</a></li>
     <a class="list-group-item" href="#component-modal">Modal</a></li>
-    <a class="list-group-item" href="#component-data-table">Data table</a></li>
-    <a class="list-group-item" href="#component-bordered-list">Bordered list</a></li>
-    <a class="list-group-item" href="#component-sortable-list">Sortable list</a></li>
-    <a class="list-group-item" href="#component-datagrid">Datagrid</a></li>
-    <a class="list-group-item" href="#component-options">Option list</a></li>
-    <a class="list-group-item" href="#component-accordion">Accordion</a></li>
-    <a class="list-group-item" href="#component-mini-bar-chart">Mini bar chart</a></li>
-    <a class="list-group-item" href="#component-button-grid">Button grid</a></li>
     <a class="list-group-item" href="#component-breadcrumbs">Breadcrumbs</a></li>
   </div>
   &nbsp;<!-- Just so our column stays in place -->
@@ -54,56 +44,53 @@ title: Style guide
               <td>Note that these colors have <strong>semantic</strong> names (except for light/dark).</td>
           </tr>
         </table>
-
+        
+        <h3>Grays</h3>
         <div class="colors">
             <div>
-                <div class="color-example" style="background: #FFF; box-shadow: 0 0 0 1px #DDD"></div>
-                <p>$very-light-color: #FFF</p>
+                <div class="color-example" style="background: #5cb85c;"></div>
+                <p>$brand-success: #5cb85c</p>
             </div>
             <div>
-                <div class="color-example" style="background: #f5f6f7;"></div>
-                <p>Not used ATM: #F5F6F7</p>
+                <div class="color-example" style="background: #d9534f;"></div>
+                <p>$brand-danger: #d9534f</p>
             </div>
             <div>
-                <div class="color-example" style="background: #d1d6da;"></div>
-                <p>$light-medium-color: #D1D6DA</p>
+                <div class="color-example" style="background: #428bca;"></div>
+                <p>$brand-primary: #428bca</p>
             </div>
             <div>
-                <div class="color-example" style="background: #606b7c;"></div>
-                <p>$gray: #606B7C</p>
+                <div class="color-example" style="background: #f0ad4e;"></div>
+                <p>$brand-warning: #f0ad4e</p>
             </div>
             <div>
-                <div class="color-example" style="background: #373c44;"></div>
-                <p>$gray-dark: #373c44</p>
+                <div class="color-example" style="background: #5bc0de;"></div>
+                <p>$brand-info: #5bc0de</p>
             </div>
-            <div>
-                <div class="color-example" style="background: #202123;"></div>
-                <p>$gray-darker: #202123</p>
-            </div>
-            <div>
-                <div class="color-example" style="background: #000;"></div>
-                <p>$very-dark-color: #000</p>
-            </div>
-            <div>
-                <div class="color-example" style="background: #627b1e;"></div>
-                <p>$brand-success: #627b1e</p>
-            </div>
-            <div>
-                <div class="color-example" style="background: #c30d39;"></div>
-                <p>$brand-danger: #c30d39</p>
-            </div>
-            <div>
-                <div class="color-example" style="background: #643ABF;"></div>
-                <p>$brand-help: #643ABF</p>
-            </div>
-            <div>
-                <div class="color-example" style="background: #0555c8;"></div>
-                <p>$brand-primary: #0555C8</p>
-            </div>
-            <div>
-                <div class="color-example" style="background: #fc6c2b;"></div>
-                <p>$danger-warning: #FC6C2B</p>
-            </div>
+        </div>
+
+        <h3>Brand colors</h3>
+        <div class="colors">
+          <div>
+              <div class="color-example" style="background: #555;"></div>
+              <p>$gray: #555</p>
+          </div>
+          <div>
+              <div class="color-example" style="background: #333;"></div>
+              <p>$gray-dark: #333</p>
+          </div>
+          <div>
+              <div class="color-example" style="background: #222;"></div>
+              <p>$gray-darker: #222</p>
+          </div>
+          <div>
+              <div class="color-example" style="background: #999;"></div>
+              <p>$gray-light: #999</p>
+          </div>
+          <div>
+              <div class="color-example" style="background: #eee;"></div>
+              <p>$gray-lighter: #eee</p>
+          </div>
         </div>
 
     </div>
@@ -246,42 +233,13 @@ title: Style guide
 </div>
 
 
-<div id="component-autocomplete" class="component">
-
-    <h2>Component: autocomplete (typeahead)</h2>
-
-    <table class="table table-horizontal">
-        <tr>
-            <th>CSS source file</th>
-            <td>_typeahead.scss</td>
-        </tr>
-        <tr>
-            <th>Dependencies</th>
-            <td>Bower component: typeahead.js</td>
-        </tr>
-    </table>
-
-    <div class="sample">
-        <div class="style">
-            {% include patterns/autocomplete.html %}
-        </div>
-        <div class="markup">
-{% highlight html %}
-{% include patterns/autocomplete.html %}
-{% endhighlight %}
-        </div>
-    </div>
-
-</div>
-
-
-<div id="component-typography" class="component">
-    <h2>Component: typography</h2>
+<div id="component-type" class="component">
+    <h2>Component: type</h2>
 
     <table class="table table-horizontal">
         <tr>
             <th>CSS source file</th>
-            <td><code>_typography.scss</code></td>
+            <td><code>_type.scss</code></td>
         </tr>
         <tr>
             <th>Dependencies</th>
@@ -491,69 +449,6 @@ title: Style guide
 
 </div>
 
-<div id="component-slider" class="component">
-
-  <h2>Component: slider</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>None</code></td>
-      </tr>
-      <tr>
-          <th>JS source file</th>
-          <td>
-            <code>/</code>
-          </td>
-      </tr>
-  </table>
-
-    <div class="sample">
-        <div class="style">
-            {% include patterns/slider.html %}
-        </div>
-        <div class="markup">
-{% highlight html %}
-{% include patterns/slider.html %}
-{% endhighlight %}
-        </div>
-    </div>
-
-</div>
-
-<div id="component-tags" class="component">
-
-  <h2>Component: tags</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_tags.scss</code></td>
-      </tr>
-  </table>
-
-    <div class="sample">
-        <div class="style">
-            {% include patterns/tags.html %}
-        </div>
-        <div class="markup">
-{% highlight html %}
-{% include patterns/tags.html %}
-{% endhighlight %}
-        </div>
-    </div>
-    <div class="sample">
-        <div class="style">
-            {% include patterns/tags-small.html %}
-        </div>
-        <div class="markup">
-{% highlight html %}
-{% include patterns/tags-small.html %}
-{% endhighlight %}
-        </div>
-    </div>
-
-</div>
 
 <div id="component-tooltips" class="component">
 
@@ -643,231 +538,6 @@ title: Style guide
       </div>
   </div>
 </div>
-
-<div id="component-data-table" class="component">
-
-  <h2>Component: data table</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_datagrid.scss</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/data-table.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/data-table.html %}
-{% endhighlight %}
-      </div>
-  </div>
-</div>
-
-<div id="component-bordered-list" class="component">
-
-  <h2>Component: bordered list</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_bordered-list.scss</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/bordered-list.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/bordered-list.html %}
-{% endhighlight %}
-      </div>
-  </div>
-</div>
-
-<div id="component-sortable-list" class="component">
-
-  <h2>Component: sortable list</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_sortable-list.scss</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/sortable-list.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/sortable-list.html %}
-{% endhighlight %}
-      </div>
-  </div>
-</div>
-
-<div id="component-datagrid" class="component">
-
-  <h2>Component: data grid</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_data-grid.scss</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/datagrid.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/datagrid.html %}
-{% endhighlight %}
-      </div>
-  </div>
-  <div class="sample">
-      <div class="style">
-          {% include patterns/datagrid2.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/datagrid2.html %}
-{% endhighlight %}
-      </div>
-  </div>
-  <div class="sample">
-      <div class="style">
-          {% include patterns/datagrid2.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/datagrid3.html %}
-{% endhighlight %}
-      </div>
-  </div>
-</div>
-
-<div id="component-accordion" class="component">
-
-  <h2>Component: accordion</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_accordion.scss</code></td>
-      </tr>
-      <tr>
-          <th>JS source file</th>
-          <td><code>accordion.js</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/accordion.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/accordion.html %}
-{% endhighlight %}
-      </div>
-  </div>
-</div>
-
-<div id="component-options" class="component">
-
-  <h2>Component: options list</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_options.scss</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/options.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/options.html %}
-{% endhighlight %}
-      </div>
-  </div>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/options-ul.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/options.html %}
-{% endhighlight %}
-      </div>
-  </div>
-</div>
-
-
-<div id="component-mini-bar-chart" class="component">
-
-  <h2>Component: mini bar chart</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_mini-bar-chart.scss</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/mini-bar-chart.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/mini-bar-chart.html %}
-{% endhighlight %}
-      </div>
-  </div>
-
-</div>
-
-
-<div id="component-button-grid" class="component">
-
-  <h2>Component: button grid</h2>
-
-  <table class="table table-horizontal">
-      <tr>
-          <th>CSS source file</th>
-          <td><code>_button-grid.scss</code></td>
-      </tr>
-  </table>
-
-  <div class="sample">
-      <div class="style">
-          {% include patterns/button-grid.html %}
-      </div>
-      <div class="markup">
-{% highlight html %}
-{% include patterns/button-grid.html %}
-{% endhighlight %}
-      </div>
-  </div>
-
-</div>
-
-
 
 <div id="component-breadcrumbs" class="component">
 

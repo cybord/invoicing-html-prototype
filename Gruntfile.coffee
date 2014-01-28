@@ -50,6 +50,7 @@ module.exports = (grunt) ->
                     cacheLocation: '.tmp/css/'
                 files:
                     '.tmp/css/application.css': '_scss/application.scss'
+                    '.tmp/css/styleguide.css': '_scss/styleguide.scss'
 
         jekyll:
             dist:
