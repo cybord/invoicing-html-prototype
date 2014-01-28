@@ -3,12 +3,16 @@ layout: app
 title: Clients
 ---
 <div class="row">
-  <h1><span class="glyphicon glyphicon-user"></span> Clients</h1>
-
-  <a class="btn btn-success" data-toggle="modal" data-target="#add-client">
-   <span class="glyphicon glyphicon-plus"></span>
-   Add a new client
-  </a>
+  <div class="col-sm-6">
+    <h1><span class="glyphicon glyphicon-user"></span> Clients</h1>
+  </div>
+  <div class="col-sm-6">
+    <div class="pull-right">
+      <a class="btn btn-success" data-toggle="modal" data-target="#add-client">
+        <span class="glyphicon glyphicon-plus-sign"></span>
+        Add a new client
+      </a>
+    </div>
 </div>
 
 <div class="table-responsive">
@@ -26,7 +30,7 @@ title: Clients
         </th>
         <th>
           <a href="#" title="Sort ascending">
-            Contact
+            Address
             <span class="sortable">
               <b class="caret"></b>
               <b class="caret flipped"></b>
@@ -35,20 +39,30 @@ title: Clients
         </th>
         <th>
           <a href="#" title="Sort ascending">
-            E-mail
+            Contact name
             <span class="sortable">
               <b class="caret"></b>
               <b class="caret flipped"></b>
             </span>
           </a>
         </th>
-
+        <th>
+          <a href="#" title="Sort ascending">
+            Contact e-mail
+            <span class="sortable">
+              <b class="caret"></b>
+              <b class="caret flipped"></b>
+            </span>
+          </a>
+        </th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       {% for client in site.data.clients %}
       <tr>
         <td><a href="edit-client.html">{{client.company}}</td>
+        <td>{{client.address}}</td>
         <td>{{client.name}}</td>
         <td>{{client.email}}</td>
         <td>
