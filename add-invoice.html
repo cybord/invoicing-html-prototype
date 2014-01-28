@@ -37,7 +37,7 @@ title: Add invoice
             <option value="cactus">Cactus Inc.</option>
             <option value="octopus">Octopus Inc.</option>
             <option value="ladybug">Ladybug Inc.</option>
-            <option value="somehacker">SomeHacker Inc.</option>
+            <option value="ztransfer">Z-Transfer Inc.</option>
           </select>
           <p class="help-block">
             <a class="btn btn-link" data-toggle="modal" data-target="#add-client">
@@ -58,25 +58,27 @@ title: Add invoice
 
 
 
-<div class="panel panel-default">
+<div class="panel panel-default" data-toggle-group="true">
   <div class="panel-heading clearfix">
 
     <div class="form-group pull-right">
-      <label>
-        <input type="radio" name="priceOption" checked>
-        Hour based
-      </label>
-      <label>
-        <input type="radio" name="priceOption">
-        Fixed price
-      </label>
+      <div class="btn-group">
+      <a href="#" class="btn btn-default active" data-toggle-group-trigger="rate-hourly">Hour based</a>
+      <a href="#" class="btn btn-default" data-toggle-group-trigger="rate-fixed">Fixed price</a>
+      </div>
     </div>
 
     <h3 class="panel-title">Items</h3>
 
   </div>
   <div class="panel-body">
-    <form class="form-horizontal" role="form">
+    <!-- FIXED -->
+    <form class="form-horizontal hide" role="form" data-toggle-group-element="rate-fixed">
+      <h1>foobar</h1>
+    </form>
+
+    <!-- HOURLY -->
+    <form class="form-horizontal" role="form" data-toggle-group-element="rate-hourly">
 
       <div class="multi-adder">
         <!-- this only exists to work with the multi adder markup pattern -->
