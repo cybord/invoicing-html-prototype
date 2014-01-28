@@ -31,3 +31,9 @@
     font-size:0.9em;
   }
 }
+#chart-income-by-client{
+  .nv-series,
+  .nv-legend{
+    display: none;
+  }
+}

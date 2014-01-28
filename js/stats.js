@@ -96,309 +96,46 @@ nv.addGraph(function() {
 long_short_data = [
   {
     key: 'Series1',
-    color: '#d62728',
     values: [
       {
-        "label" : "Group A" ,
-        "value" : -1.8746444827653
+        "label" : "Aztec Inc." ,
+        "value" : 27653
       } ,
       {
-        "label" : "Group B" ,
-        "value" : -8.0961543492239
+        "label" : "Uberlux" ,
+        "value" : 92239
       } ,
       {
-        "label" : "Group C" ,
-        "value" : -0.57072943117674
+        "label" : "Netgram" ,
+        "value" : 11764
       } ,
       {
-        "label" : "Group D" ,
-        "value" : -2.4174010336624
+        "label" : "Facebox" ,
+        "value" : 36624
       } ,
       {
-        "label" : "Group E" ,
-        "value" : -0.72009071426284
+        "label" : "Linkstagram" ,
+        "value" : 42684
       } ,
       {
-        "label" : "Group F" ,
-        "value" : -0.77154485523777
+        "label" : "Zappix" ,
+        "value" : 53777
       } ,
       {
-        "label" : "Group G" ,
-        "value" : -0.90152097798131
+        "label" : "Earthpure" ,
+        "value" : 79813
       } ,
       {
-        "label" : "Group H" ,
-        "value" : -0.91445417330854
+        "label" : "Grupoli" ,
+        "value" : 33084
       } ,
       {
-        "label" : "Group I" ,
-        "value" : -0.055746319141851
-      }
-    ]
-  },
-  {
-    key: 'Series2',
-    color: '#1f77b4',
-    values: [
-      {
-        "label" : "Group A" ,
-        "value" : 25.307646510375
-      } ,
-      {
-        "label" : "Group B" ,
-        "value" : 16.756779544553
-      } ,
-      {
-        "label" : "Group C" ,
-        "value" : 18.451534877007
-      } ,
-      {
-        "label" : "Group D" ,
-        "value" : 8.6142352811805
-      } ,
-      {
-        "label" : "Group E" ,
-        "value" : 7.8082472075876
-      } ,
-      {
-        "label" : "Group F" ,
-        "value" : 5.259101026956
-      } ,
-      {
-        "label" : "Group G" ,
-        "value" : 0.30947953487127
-      } ,
-      {
-        "label" : "Group H" ,
-        "value" : 0
-      } ,
-      {
-        "label" : "Group I" ,
-        "value" : 0
-      }
-    ]
-  },
-  {
-    key: 'Series3',
-    color: '#2ca02c',
-    values: [
-      {
-        "label" : "Group A" ,
-        "value" : -25.307646510375
-      } ,
-      {
-        "label" : "Group B" ,
-        "value" : 16.756779544553
-      } ,
-      {
-        "label" : "Group C" ,
-        "value" : -18.451534877007
-      } ,
-      {
-        "label" : "Group D" ,
-        "value" : 8.6142352811805
-      } ,
-      {
-        "label" : "Group E" ,
-        "value" : -7.8082472075876
-      } ,
-      {
-        "label" : "Group F" ,
-        "value" : 5.259101026956
-      } ,
-      {
-        "label" : "Group G" ,
-        "value" : -0.30947953487127
-      } ,
-      {
-        "label" : "Group H" ,
-        "value" : 0
-      } ,
-      {
-        "label" : "Group I" ,
-        "value" : 0
+        "label" : "Miracles" ,
+        "value" : 15851
       }
     ]
   }
 ];
-
-
-
-long_short_pos_data = [
-  {
-    key: 'Series1',
-    color: '#d62728',
-    values: [
-      {
-        "label" : "Group A" ,
-        "value" : 1.8746444827653
-      } ,
-      {
-        "label" : "Group B" ,
-        "value" : 8.0961543492239
-      } ,
-      {
-        "label" : "Group C" ,
-        "value" : 0.57072943117674
-      } ,
-      {
-        "label" : "Group D" ,
-        "value" : 2.4174010336624
-      } ,
-      {
-        "label" : "Group E" ,
-        "value" : 0.72009071426284
-      } ,
-      {
-        "label" : "Group F" ,
-        "value" : 0.77154485523777
-      } ,
-      {
-        "label" : "Group G" ,
-        "value" : 0.90152097798131
-      } ,
-      {
-        "label" : "Group H" ,
-        "value" : 0.91445417330854
-      } ,
-      {
-        "label" : "Group I" ,
-        "value" : 0.055746319141851
-      }
-    ]
-  },
-  {
-    key: 'Series2',
-    color: '#1f77b4',
-    values: [
-      {
-        "label" : "Group A" ,
-        "value" : 25.307646510375
-      } ,
-      {
-        "label" : "Group B" ,
-        "value" : 16.756779544553
-      } ,
-      {
-        "label" : "Group C" ,
-        "value" : 18.451534877007
-      } ,
-      {
-        "label" : "Group D" ,
-        "value" : 8.6142352811805
-      } ,
-      {
-        "label" : "Group E" ,
-        "value" : 7.8082472075876
-      } ,
-      {
-        "label" : "Group F" ,
-        "value" : 5.259101026956
-      } ,
-      {
-        "label" : "Group G" ,
-        "value" : 0.30947953487127
-      } ,
-      {
-        "label" : "Group H" ,
-        "value" : 0
-      } ,
-      {
-        "label" : "Group I" ,
-        "value" : 0
-      }
-    ]
-  }
-];
-
-
-long_short_neg_data = [
-  {
-    key: 'Series1',
-    color: '#d62728',
-    values: [
-      {
-        "label" : "Group A" ,
-        "value" : -1.8746444827653
-      } ,
-      {
-        "label" : "Group B" ,
-        "value" : -8.0961543492239
-      } ,
-      {
-        "label" : "Group C" ,
-        "value" : -0.57072943117674
-      } ,
-      {
-        "label" : "Group D" ,
-        "value" : -2.4174010336624
-      } ,
-      {
-        "label" : "Group E" ,
-        "value" : -0.72009071426284
-      } ,
-      {
-        "label" : "Group F" ,
-        "value" : -0.77154485523777
-      } ,
-      {
-        "label" : "Group G" ,
-        "value" : -0.90152097798131
-      } ,
-      {
-        "label" : "Group H" ,
-        "value" : -0.91445417330854
-      } ,
-      {
-        "label" : "Group I" ,
-        "value" : -0.055746319141851
-      }
-    ]
-  },
-  {
-    key: 'Series2',
-    color: '#1f77b4',
-    values: [
-      {
-        "label" : "Group A" ,
-        "value" : -25.307646510375
-      } ,
-      {
-        "label" : "Group B" ,
-        "value" : -16.756779544553
-      } ,
-      {
-        "label" : "Group C" ,
-        "value" : -18.451534877007
-      } ,
-      {
-        "label" : "Group D" ,
-        "value" : -8.6142352811805
-      } ,
-      {
-        "label" : "Group E" ,
-        "value" : -7.8082472075876
-      } ,
-      {
-        "label" : "Group F" ,
-        "value" : -5.259101026956
-      } ,
-      {
-        "label" : "Group G" ,
-        "value" : -0.30947953487127
-      } ,
-      {
-        "label" : "Group H" ,
-        "value" : 0
-      } ,
-      {
-        "label" : "Group I" ,
-        "value" : 0
-      }
-    ]
-  }
-];
-
 
 
 
@@ -408,7 +145,7 @@ nv.addGraph(function() {
   chart2 = nv.models.multiBarHorizontalChart()
       .x(function(d) { return d.label })
       .y(function(d) { return d.value })
-      .margin({top: 30, right: 20, bottom: 50, left: 175})
+      .margin({top: 30, right: 50, bottom: 50, left: 50})
       //.showValues(true)
       .tooltips(true)
       // .barColor(d3.scale.category20().range())
