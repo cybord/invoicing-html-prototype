@@ -1,19 +1,37 @@
 <div class="form-group clearfix">
-  <label for="addInvoiceAddress" class="col-sm-2 control-label">
+  <label for="addInvoiceAddressStreet" class="col-sm-2 control-label">
     Address
     <abbr title="Required field">*</abbr>
   </label>
   <div class="col-sm-10">
-    <input class="form-control trailer" id="addInvoiceAddress" placeholder="Street, number">
-
-    <div class="row">
-      <div class="col-xs-8">
-        <input class="form-control trailer" id="addInvoiceAddressPlace" placeholder="City">
+    <div class="row trailer">
+      <div class="col-xs-6">
+        <input class="form-control" id="addInvoiceAddressStreet" placeholder="Street">
       </div>
-      <div class="col-xs-4">
-        <input class="form-control trailer" id="addInvoiceAddressPostalCode" placeholder="Postal code">
+      <div class="col-xs-3">
+        <input class="form-control" id="addInvoiceAddressNumber" placeholder="Number">
+      </div>
+      <div class="col-xs-3">
+        <input class="form-control" id="addInvoiceAddressPo" placeholder="PO Box">
       </div>
 
     </div>
+
+    <div class="row trailer">
+      <div class="col-xs-8">
+        <input class="form-control" id="addInvoiceAddressPlace" placeholder="City">
+      </div>
+      <div class="col-xs-4">
+        <input class="form-control" id="addInvoiceAddressPostalCode" placeholder="Postal code">
+      </div>
+    </div>
+
+    <div class="row trailer">
+      <div class="col-xs-12">
+        <input class="form-control" id="addInvoiceAddressState" placeholder="State / Provence">
+      </div>
+    </div>
+
+
   </div>
 </div>
