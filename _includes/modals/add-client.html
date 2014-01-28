@@ -1,14 +1,14 @@
-<!-- Modal for add organisation -->
-<div id="add-organisation" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
+<!-- Modal for add client -->
+<div id="add-client" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Nieuwe organisatie</h4>
+        <h4 class="modal-title">Add client</h4>
       </div>
       <div class="modal-body has-sections">
 
-        <h3 class="section-header">Basisgegevens</h3>
+        <h3 class="section-header">Basic info</h3>
 
         <section>
 
@@ -16,13 +16,11 @@
             <label class="control-label">Naam<abbr title="Verplicht veld">*</abbr></label>
             <input type="text" class="form-control">
           </div>
-      
+
           <div class="form-group">
             <label class="control-label">E-mail<abbr title="Verplicht veld">*</abbr></label>
             <input type="email" class="form-control">
           </div>
-
-          {% include form-groups/form-group-address-simple.html %}
 
         </section>
 
