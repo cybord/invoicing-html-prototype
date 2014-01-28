@@ -18,8 +18,18 @@
 
       <div class="navbar-right">
         <a href="/add-invoice.html" class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-plus-sign"></span> Add invoice</a>
-        <a href="/index.html" class="btn btn-default navbar-btn">Sign out</a>
-      </div>
+
+        <div class="btn-group navbar-btn dropdown">
+          <a class="dropdown-toggle btn btn-default" data-toggle="dropdown" href="#">
+            <span>John Doe</span>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/user-settings.html">User settings</a></li>
+            <li><a href="/index.html">Sign out</a></li>
+          </ul>
+        </div><!-- btn group -->
+      </div> <!-- navbar right -->
 
     </div><!--/.nav-collapse -->
   </div>
