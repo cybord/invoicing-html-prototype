@@ -8,3 +8,14 @@ $dropdown-caret-color: $gray-darker;
 
 // extensions
 @import "extensions/sortable-table";
+
+
+// Page header
+// -------------------------
+
+.page-header {
+  margin-top: 0;
+  h1 {
+    margin-top: 0;
+  }
+}
