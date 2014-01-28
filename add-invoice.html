@@ -74,7 +74,78 @@ title: Add invoice
   <div class="panel-body">
     <!-- FIXED -->
     <form class="form-horizontal hide" role="form" data-toggle-group-element="rate-fixed">
-      <h1>foobar</h1>
+
+      <div class="multi-adder">
+        <!-- this only exists to work with the multi adder markup pattern -->
+        <div class="form-group">
+          <div class="col-sm-6">
+            <a href="#" class="btn btn-success multi-add">Add row</a>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-sm-9">
+            <b>Description</b>
+          </div>
+          <div class="col-sm-3">
+            <b>Price</b>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-9">
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+              <span class="input-group-addon">€</span>
+              <input class="form-control" type="text">
+            </div>
+          </div>
+          <hr>
+        </div> <!-- end form group -->
+
+
+        <div class="multi-adder-row-holder hide">
+          <div class="multi-adder-row">
+            <div class="form-group">
+              <div class="col-sm-9">
+                <input class="form-control" type="text">
+              </div>
+              <div class="col-sm-3">
+                <div class="input-group">
+                  <span class="input-group-addon">€</span>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <hr>
+            </div> <!-- end form group -->
+          </div>
+        </div>
+
+      </div> <!-- end multi-adder -->
+
+      <div class="row">
+        <div class="col-sm-4 pull-right">
+          <div class="trailer">
+            <div class="col-sm-6">Subtotal</div>
+            <div class="col-sm-6">€1200</div>
+          </div>
+          <div class="trailer clearfix">
+            <div class="col-sm-6">VAT total:</div>
+            <div class="col-sm-6">€252</div>
+          </div>
+          <hr />
+          <div class="trailer clearfix"><b>
+            <div class="col-sm-6">Total:</div>
+            <div class="col-sm-6">€1452</div>
+          </b></div>
+
+        </div>
+      </div>
+
+
+
     </form>
 
     <!-- HOURLY -->
