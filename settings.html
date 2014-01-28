@@ -5,49 +5,108 @@ title: Settings
 
 <h1><span class="glyphicon glyphicon-cog"></span> Settings</h1>
 
-<h2>Your company data</h2>
-
-<form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label for="addInvoiceName" class="col-sm-2 control-label">Name</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="addInvoiceName" placeholder="Enter name">
-    </div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Your company data</h3>
   </div>
+  <div class="panel-body">
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="addInvoiceName" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+          <input class="form-control" id="addInvoiceName" placeholder="Enter name">
+        </div>
+      </div>
 
-  <div class="form-group">
-    <label for="addInvoiceAddress" class="col-sm-2 control-label">Address</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="addInvoiceAddress">
-    </div>
+      <div class="form-group">
+        <label for="addInvoiceAddress" class="col-sm-2 control-label">Address</label>
+        <div class="col-sm-10">
+          <input class="form-control trailer" id="addInvoiceAddress" placeholder="Street, number">
+          <input class="form-control trailer" id="addInvoiceAddressPlace" placeholder="City">
+          <input class="form-control trailer" id="addInvoiceAddressPostalCode" placeholder="Postal code">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="addInvoiceVat" class="col-sm-2 control-label">VAT no.</label>
+        <div class="col-sm-10">
+          <input class="form-control" id="addInvoiceVat" placeholder="BE123 4544 11444">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div> <!-- end panel body -->
+</div> <!-- end panel -->
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Defaults</h3>
   </div>
+  <div class="panel-body">
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <p class="col-sm-10 col-sm-offset-2">You can change these defaults for any invoice, this text will be prefilled.</p>
+      </div>
 
-  <div class="form-group">
-    <label for="addInvoiceVat" class="col-sm-2 control-label">VAT no.</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="addInvoiceVat">
-    </div>
-  </div>
+      <div class="form-group">
+        <label for="inputTaxRate" class="col-sm-2 control-label">Tax rate</label>
+        <div class="col-sm-10">
 
-  <div class="form-group">
-    <label for="addInvoiceRate" class="col-sm-2 control-label">Default rate/hour</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="addInvoiceRate">
-    </div>
-  </div>
+          <select class="form-control" id="inputTaxRate">
+            <option selected="true" value="21">21%</option>
+            <option value="6">6%</option>
+            <option value="none">none</option>
+          </select>
 
-  <div class="form-group">
-    <label for="addInvoiceTerms" class="col-sm-2 control-label">Payment terms</label>
-    <div class="col-sm-10">
-      <textarea id="addInvoiceTerms" class="form-control" rows="3"></textarea>
-    </div>
-  </div>
+        </div>
+      </div>
 
-  <div class="form-group">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-  </div>
+      <div class="form-group">
+        <label for="inputCurrency" class="col-sm-2 control-label">Currency</label>
+        <div class="col-sm-10">
 
-</form>
+          <select class="form-control" id="inputCurrency">
+            <option value="us-dollar">US Dollar $</option>
+            <option selected="true" value="euro">Euro €</option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="addInvoiceRate" class="col-sm-2 control-label">Rate/hour</label>
+        <div class="col-sm-10">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input class="form-control" id="addInvoiceRate">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="addInvoiceTerms" class="col-sm-2 control-label">Payment terms</label>
+        <div class="col-sm-10">
+          <textarea id="addInvoiceTerms" class="form-control" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div> <!-- end panel body -->
+</div> <!-- end panel -->
