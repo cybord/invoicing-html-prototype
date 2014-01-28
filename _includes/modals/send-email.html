@@ -1,0 +1,49 @@
+<!-- Modal for send invoice email -->
+<div id="send-email" class="modal fade in" {% if page.show-modal %}style="display: block;"{% endif %}>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Send invoice by mail</h4>
+      </div>
+      <div class="modal-body has-sections">
+
+        <section>
+
+          <div class="form-group clearfix">
+            <label for="inputName" class="col-sm-2 control-label">
+              To<abbr title="Required field">*</abbr>
+            </label>
+            <div class="col-sm-10">
+              <input id="inputName" type="text" class="form-control" value="invoices@some-company.net">
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <label for="invoiceMessage" class="col-sm-2 control-label">
+              Message<abbr title="Required field">*</abbr>
+            </label>
+            <div class="col-sm-10">
+              <textarea id="invoiceMessage" class="form-control" rows="8">
+Hi,
+
+We're sending you [invoice-title] for a total cost of [invoice-total].
+The payment term is [invoice-payment-term].
+
+Greetings,
+John Doe Inc.
+              </textarea>
+            </div>
+          </div>
+
+
+        </section>
+
+      </div><!-- .modal-body -->
+      <div class="modal-footer">
+        <a href="#" class="btn-link pull-left" data-dismiss="modal">Cancel</a>
+        <a href="#" class="btn btn-success pull-right" data-dismiss="modal">Send</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

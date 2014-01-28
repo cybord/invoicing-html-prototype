@@ -4,6 +4,10 @@
   {% if page.modal == "add-client" %}
     {% include modals/add-client.html %}
   {% endif %}
+  {% if page.modal == "send-email" %}
+    {% include modals/send-email.html %}
+  {% endif %}
 {% else %}
   {% include modals/add-client.html %}
+  {% include modals/send-email.html %}
 {% endif %}
