@@ -3,8 +3,24 @@ layout: app
 title: Add invoice
 ---
 
+<div class="row">
+  <h1 class="col-md-6"><span class="glyphicon glyphicon-file"></span> Add invoice</h1>
+  <div class="pull-right">
+    <div class="form-group">
 
-<h1><span class="glyphicon glyphicon-file"></span> Add invoice</h1>
+        <label>
+          <input type="checkbox">
+          Use standard rate
+        </label>
+
+        <label>
+          <input type="checkbox">
+          Use default payment terms
+        </label>
+
+    </div>
+  </div>
+</div>
 
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -42,8 +58,20 @@ title: Add invoice
 
 
 <div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Items</h3>
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title col-md-6">Items</h3>
+
+
+    <div class="form-group pull-right">
+      <label>
+        <input type="radio" name="priceOption">
+        Hour based
+      </label>
+      <label>
+        <input type="radio" name="priceOption">
+        Fixed price
+      </label>
+    </div>
 
   </div>
   <div class="panel-body">
@@ -118,7 +146,7 @@ title: Add invoice
 
 <div class="panel panel-default">
   <div class="panel-body">
-    <a href="/invoices.html" class="pull-left">Cancel</a>
+    <a href="/invoices.html" class="btn pull-left">Cancel</a>
 
     <div class="btn-toolbar pull-right" role="toolbar">
       <a href="/invoices.html" class="btn btn-default">Preview</a>
