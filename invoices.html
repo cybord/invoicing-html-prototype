@@ -4,7 +4,7 @@ title: Invoices
 ---
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-sm-6">
     <div class="panel panel-default">
       <div class="panel-heading">Current time period</div>
       <div class="panel-body">
@@ -17,16 +17,16 @@ title: Invoices
     </div>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-sm-6">
     <div class="panel panel-default">
       <div class="panel-body">
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-xs-6">
             <p>Outstanding</p>
             <h2>€2400</h2>
           </div>
-          <div class="col-md-6">
+          <div class="col-xs-6">
             <p>Paid since 01/01/2014</p>
             <h2>€5845</h2>
           </div>
@@ -37,180 +37,214 @@ title: Invoices
   </div>
 </div>
 
-<h2>Invoices to be paid</h2>
-<div class="table-responsive">
-  <table class="table table-striped table-condensed table-responsive">
-    <thead>
-      <tr>
-        <th>
-          <a href="#" title="Sort ascending">
-            Name
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            No.
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Status
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Value BTW in.
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Value BTW ex.
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>BTW</th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Due date
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for num in (1..5) %}
-      <tr>
-        <td><a href="edit-invoice.html">Client name</td>
-        <td>{% cycle '221', '220', '219', '218' %}</td>
-        <td>
-          {% cycle '<span class="label label-default">Not paid</span>', '<span class="label label-danger">Late</span>' %}
-        </td>
-        <td>€1210</td>
-        <td>€1000</td>
-        <td>€210</td>
-        <td>In 5 days</td>
-        <td>
-          <a href="#" class="btn btn-default btn-xs">Edit</a>
-          <a href="#" class="btn btn-default btn-xs">Delete</a>
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div><!-- end responsive table -->
 
-<h2>Paid invoices</h2>
-<div class="table-responsive">
-  <table class="table table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>
-          <a href="#" title="Sort ascending">
-            Name
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            No.
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Status
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Value BTW in.
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Value BTW ex.
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th>BTW</th>
-        <th>
-          <a href="#" title="Sort ascending">
-            Due date
-            <span class="sortable">
-              <b class="caret"></b>
-              <b class="caret flipped"></b>
-            </span>
-          </a>
-        </th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for num in (1..10) %}
-      <tr>
-        <td><a href="edit-invoice.html">Client name</td>
-        <td>{% cycle '217', '216', '215', '214', '213', '212', '211', '210', '209', '208' %}</td>
-        <td><span class="label label-success">Paid</span></td>
-        <td>€1210</td>
-        <td>€1000</td>
-        <td>€210</td>
-        <td>OK</td>
-        <td>
-          <a href="#" class="btn btn-default btn-xs">Edit</a>
-          <a href="#" class="btn btn-default btn-xs">Delete</a>
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div><!-- end responsive table -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Invoices to be paid</h3>
+  </div>
+  <div class="panel-body">
+    
+    <div class="table-responsive">
+      <table class="table table-striped table-condensed table-responsive">
+        <thead>
+          <tr>
+            <th>
+              <a href="#" title="Sort ascending">
+                Name
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th class="sorted-asc">
+              <a href="#" title="Sorted ascending">
+                No.
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Status
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Value BTW in.
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Value BTW ex.
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                BTW
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Due date
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for num in (1..5) %}
+          <tr>
+            <td><a href="edit-invoice.html">Client name</td>
+            <td>{% cycle '221', '220', '219', '218' %}</td>
+            <td>
+              {% cycle '<span class="label label-default">Not paid</span>', '<span class="label label-danger">Late</span>' %}
+            </td>
+            <td>€1210</td>
+            <td>€1000</td>
+            <td>€210</td>
+            <td>In 5 days</td>
+            <td>
+              <a href="#" class="btn btn-default btn-xs">Edit</a>
+              <a href="#" class="btn btn-default btn-xs">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div><!-- end responsive table -->
 
-<ul class="pagination">
-  <li><a href="#">&laquo;</a></li>
-  <li class="active"><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
-</ul>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Paid invoices</h3>
+  </div>
+  <div class="panel-body">
+    <div class="table-responsive">
+      <table class="table table-striped table-condensed">
+        <thead>
+          <tr>
+            <th>
+              <a href="#" title="Sort ascending">
+                Name
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th class="sorted-asc">
+              <a href="#" title="Sorted ascending">
+                No.
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Status
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Value BTW in.
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Value BTW ex.
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                BTW
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th>
+              <a href="#" title="Sort ascending">
+                Due date
+                <span class="sortable">
+                  <b class="caret"></b>
+                  <b class="caret flipped"></b>
+                </span>
+              </a>
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for num in (1..10) %}
+          <tr>
+            <td><a href="edit-invoice.html">Client name</td>
+            <td>{% cycle '217', '216', '215', '214', '213', '212', '211', '210', '209', '208' %}</td>
+            <td><span class="label label-success">Paid</span></td>
+            <td>€1210</td>
+            <td>€1000</td>
+            <td>€210</td>
+            <td>OK</td>
+            <td>
+              <a href="#" class="btn btn-default btn-xs">Edit</a>
+              <a href="#" class="btn btn-default btn-xs">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div><!-- end responsive table -->
+    
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+
+  </div>
+</div>
+

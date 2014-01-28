@@ -28,20 +28,32 @@
   .caret.flipped {
     top: 0;
   }
-  &.sorted-asc {
-    .caret {
-      @include opacity(1);
-    }
-    .caret.flipped {
-      @include opacity(0.3);
-    }
+}
+
+.sorted-asc,
+.sorted-desc {
+  background: $gray-lighter;
+}
+
+.sorted-asc .sortable {
+  .caret {
+    @include opacity(1);
   }
-  &.sorted-desc {
-    .caret.flipped {
-      @include opacity(1);
-    }
+  .caret.flipped {
+    @include opacity(0.3);
   }
 }
+
+
+.sorted-desc .sortable {
+  .caret {
+    @include opacity(0.3);
+  }
+  .caret.flipped {
+    @include opacity(1);
+  }
+}
+
 
 .table .sortable {
   position: absolute;
@@ -49,11 +61,11 @@
   top: 5px;
 }
 
+.table-sortable th:hover {
+  background: $gray-lighter;
+}
 .table th a {
   display: block;
   white-space: nowrap;
   position: relative;
-  &:hover {
-    background: #EEE;
-  }
 }
