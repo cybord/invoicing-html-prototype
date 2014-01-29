@@ -28,6 +28,7 @@ bodyclass: styleguide
 
     <h3>Custom elements</h3>
     <a class="list-group-item" href="#component-sortabletable">Sortable Table</a></li>
+    <a class="list-group-item" href="#component-accounting">Accounting numbers</a></li>
   </div>
   &nbsp;<!-- Just so our column stays in place -->
 </nav>
@@ -591,6 +592,32 @@ bodyclass: styleguide
       <div class="markup">
 {% highlight html %}
 {% include patterns/custom/sortable-table.html %}
+{% endhighlight %}
+      </div>
+  </div>
+
+</div>
+
+
+
+<div id="component-accounting" class="component">
+
+  <h2>Component: Accounting numbers</h2>
+
+  <table class="table table-horizontal">
+      <tr>
+          <th>CSS source file</th>
+          <td><code>/_scss/extensions/_account-numbers.scss</code></td>
+      </tr>
+  </table>
+
+  <div class="sample">
+      <div class="style">
+          {% include patterns/custom/account-numbers.html %}
+      </div>
+      <div class="markup">
+{% highlight html %}
+{% include patterns/custom/account-numbers.html %}
 {% endhighlight %}
       </div>
   </div>
