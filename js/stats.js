@@ -69,7 +69,7 @@ nv.addGraph(function() {
       //.staggerLabels(historicalBarChart[0].values.length > 8)
       .tooltips(false)
       .showValues(true)
-      .color(['#55bada'])
+      .color(['#068BC6'])
       .transitionDuration(250)
       ;
 
@@ -149,9 +149,9 @@ nv.addGraph(function() {
       //.showValues(true)
       .tooltips(true)
       // .barColor(d3.scale.category20().range())
-      .barColor(['#55bada'])
+      .barColor(['#068BC6'])
       .transitionDuration(250)
-      .color(['#55bada'])
+      .color(['#068BC6'])
       .stacked(true)
       //.showControls(false);
 

@@ -28,12 +28,26 @@
   padding: 0;
 }
 
+.vert-center-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.vert-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  float: none !important;
+}
+html, body{
+  height:100%; // for vertical centering to work
+}
 
 // charting
 // -------------------------
 .chart{
   svg{
-    height:400px;
+    height:300px;
     display: block;
   }
   text{
