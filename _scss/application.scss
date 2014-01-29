@@ -1,8 +1,11 @@
+@import "custom-vars";
+
 // full bootstrap import
 @import "bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
 
 // tmp fixes
 @import "tmp";
+@import "identity";
 
 // vars needed for extensions
 $dropdown-caret-color: $gray-darker;

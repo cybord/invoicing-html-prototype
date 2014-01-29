@@ -1,0 +1,25 @@
+// custom font
+// --------------
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@mixin webfont($weight:400){
+  // currently available weights
+  // 400: normal
+  // 700: bold
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:$weight;
+}
+
+h1, h2, h3, h4{
+  @include webfont(700);
+}
+
+// navigation / logo
+// --------------
+.navbar-brand{
+  padding:12px 15px;
+
+  img{
+    height:24px;
+  }
+}
