@@ -65,10 +65,9 @@ nv.addGraph(function() {
   var chart = nv.models.discreteBarChart()
       .x(function(d) { return d.label })
       .y(function(d) { return d.value })
-      .staggerLabels(true)
-      //.staggerLabels(historicalBarChart[0].values.length > 8)
-      .tooltips(false)
-      .showValues(true)
+      .staggerLabels(false)
+      .tooltips(true)
+      .showValues(false)
       .color(['#068BC6'])
       .transitionDuration(250)
       ;
@@ -95,7 +94,7 @@ nv.addGraph(function() {
 
 long_short_data = [
   {
-    key: 'Series1',
+    key: '2014',
     values: [
       {
         "label" : "Aztec Inc." ,

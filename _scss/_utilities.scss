@@ -58,24 +58,6 @@ html, body{
   min-height: 48px;
 }
 
-// charting
-// -------------------------
-.chart{
-  svg{
-    height:300px;
-    display: block;
-  }
-  text{
-    font-size:0.9em;
-  }
-}
-#chart-income-by-client{
-  .nv-series,
-  .nv-legend{
-    display: none;
-  }
-}
-
 // Page header
 // -------------------------
 
