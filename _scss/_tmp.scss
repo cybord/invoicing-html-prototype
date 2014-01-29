@@ -6,7 +6,7 @@
   src: url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.eot?#iefix') format("embedded-opentype"), url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.woff') format("woff"), url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.ttf') format("truetype"), url('/bower_components/bootstrap-sass/vendor/assets/fonts//bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format("svg");
 }
 
-// other tmp classes
+// other utility classes
 // -------------------------
 .leader{
   margin-top:0.8em;
@@ -19,6 +19,13 @@
 }
 .trailer-large{
   margin-bottom:1.6em;
+}
+
+.m0{
+  margin: 0;
+}
+.p0{
+  padding: 0;
 }
 
 
