@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <a href="/invoices.html" class="btn pull-left">Cancel</a>
+
+    <div class="btn-toolbar pull-right" role="toolbar">
+      <a href="/images/invoice.pdf" target="_blank" class="btn btn-default">Preview</a>
+      <a class="btn btn-default" data-toggle="modal" data-target="#send-email">Send via e-mail</a>
+      <a href="/invoices.html" class="btn btn-success">
+        {% if page.state == 'add-invoice' %}
+        Save
+        {% endif %}
+        {% if page.state == 'edit' %}
+        Update
+        {% endif %}
+      </a>
+    </div>
+
+  </div>
+</div> <!-- end panel -->
