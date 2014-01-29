@@ -2,12 +2,16 @@
 layout: styleguide
 environment: styleguide
 title: Style guide
+bodyclass: styleguide
 ---
 
 <div class="style-guide-container row">
 
 <nav class="style-guide-nav">
+
+
   <div class="list-group" data-spy="affix" data-offset-top="200">
+    <h3>Standard Bootstrap</h3>
     <a class="list-group-item" href="#introduction">Introduction</a></li>
     <a class="list-group-item" href="#component-colors">Colors</a></li>
     <a class="list-group-item" href="#component-icon-font">Icon font</a></li>
@@ -21,6 +25,9 @@ title: Style guide
     <a class="list-group-item" href="#component-popover">Popover</a></li>
     <a class="list-group-item" href="#component-modal">Modal</a></li>
     <a class="list-group-item" href="#component-breadcrumbs">Breadcrumbs</a></li>
+
+    <h3>Custom elements</h3>
+    <a class="list-group-item" href="#component-sortabletable">Sortable Table</a></li>
   </div>
   &nbsp;<!-- Just so our column stays in place -->
 </nav>
@@ -44,7 +51,7 @@ title: Style guide
               <td>Note that these colors have <strong>semantic</strong> names (except for light/dark).</td>
           </tr>
         </table>
-        
+
         <h3>Grays</h3>
         <div class="colors">
             <div>
@@ -101,7 +108,9 @@ title: Style guide
     <table class="table table-horizontal">
       <tr>
           <th>CSS source file</th>
-          <td><code>_icons.scss</code></td>
+          <td>
+            <code>_icons.scss</code>
+          </td>
       </tr>
     </table>
 
@@ -557,6 +566,31 @@ title: Style guide
       <div class="markup">
 {% highlight html %}
 {% include patterns/breadcrumbs.html %}
+{% endhighlight %}
+      </div>
+  </div>
+
+</div>
+
+
+<div id="component-sortabletable" class="component">
+
+  <h2>Component: Sortable Table</h2>
+
+  <table class="table table-horizontal">
+      <tr>
+          <th>CSS source file</th>
+          <td><code>/_scss/extensions/_sortable-table.scss</code></td>
+      </tr>
+  </table>
+
+  <div class="sample">
+      <div class="style">
+          {% include patterns/custom/sortable-table.html %}
+      </div>
+      <div class="markup">
+{% highlight html %}
+{% include patterns/custom/sortable-table.html %}
 {% endhighlight %}
       </div>
   </div>
