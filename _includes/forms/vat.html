@@ -4,6 +4,6 @@
     <abbr title="Required field">*</abbr>
   </label>
   <div class="col-sm-10">
-    <input class="form-control" id="addInvoiceVat" placeholder="BE123 4544 11444">
+    <input class="form-control" id="addInvoiceVat" placeholder="BE123 4544 11444" {% if page.state == "edit" %}value="BE123 4544 11444"{% endif %}>
   </div>
 </div>
