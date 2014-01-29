@@ -1,0 +1,181 @@
+<div class="panel panel-default" data-toggle-group="true">
+  <div class="panel-heading clearfix">
+
+    <div class="form-group pull-right">
+      <div class="btn-group">
+      <a href="#" class="btn btn-default active" data-toggle-group-trigger="rate-hourly">Hour based</a>
+      <a href="#" class="btn btn-default" data-toggle-group-trigger="rate-fixed">Fixed price</a>
+      </div>
+    </div>
+
+    <h3 class="panel-title">Items</h3>
+
+  </div>
+  <div class="panel-body">
+
+    <!-- FIXED -->
+    <form class="form-horizontal hide" role="form" data-toggle-group-element="rate-fixed">
+
+      <!-- <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> Add row</a> -->
+
+      <div class="row">
+        <div class="col-sm-9">
+          <b>Description</b>
+        </div>
+        <div class="col-sm-3">
+          <b>Price</b>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-9">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="CMS programming"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input class="form-control" type="text" {% if page.state == 'edit' %}value="2815"{% endif %}>
+          </div>
+        </div>
+        <hr>
+      </div> <!-- end form group -->
+
+
+      <div class="form-group">
+        <div class="col-sm-9">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="Visual design"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input class="form-control" type="text" {% if page.state == 'edit' %}value="2400"{% endif %}>
+          </div>
+        </div>
+        <hr>
+      </div> <!-- end form group -->
+
+      <div class="form-group">
+        <div class="col-sm-9">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="Front-end development"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input class="form-control" type="text" {% if page.state == 'edit' %}value="1990"{% endif %}>
+          </div>
+        </div>
+        <hr>
+      </div> <!-- end form group -->
+
+
+      <div class="row">
+        <div class="col-sm-4 pull-right">
+          <div class="trailer">
+            <div class="col-sm-6">Subtotal</div>
+            <div class="col-sm-6">€1200</div>
+          </div>
+          <div class="trailer clearfix">
+            <div class="col-sm-6">VAT total:</div>
+            <div class="col-sm-6">€252</div>
+          </div>
+          <hr />
+          <div class="trailer clearfix">
+            <b>
+              <div class="col-sm-6">Total:</div>
+              <div class="col-sm-6">€1452</div>
+            </b>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- HOURLY -->
+    <form class="form-horizontal" role="form" data-toggle-group-element="rate-hourly">
+
+    <!-- <a href="#" class="btn btn-success multi-add"><span class="glyphicon glyphicon-plus-sign"></span> Add row</a> -->
+
+      <div class="row">
+        <div class="col-sm-6">
+          <b>Description</b>
+        </div>
+        <div class="col-sm-3">
+          <b>Hours</b>
+        </div>
+        <div class="col-sm-3">
+          <b>Price</b>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-6">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="Meetings"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="11"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input class="form-control" type="text" {% if page.state == 'edit' %}value="1145"{% endif %}>
+          </div>
+        </div>
+        <hr>
+      </div> <!-- end form group -->
+
+      <div class="form-group">
+        <div class="col-sm-6">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="Visual design"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="22"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input class="form-control" type="text" {% if page.state == 'edit' %}value="1500"{% endif %}>
+          </div>
+        </div>
+        <hr>
+      </div> <!-- end form group -->
+
+      <div class="form-group">
+        <div class="col-sm-6">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="Programming"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <input class="form-control" type="text" {% if page.state == 'edit' %}value="18"{% endif %}>
+        </div>
+        <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon">€</span>
+            <input class="form-control" type="text" {% if page.state == 'edit' %}value="1420"{% endif %}>
+          </div>
+        </div>
+        <hr>
+      </div> <!-- end form group -->
+
+      <div class="row">
+        <div class="col-sm-4 pull-right">
+          <div class="trailer">
+            <div class="col-sm-6">Subtotal</div>
+            <div class="col-sm-6">€1200</div>
+          </div>
+          <div class="trailer clearfix">
+            <div class="col-sm-6">VAT total:</div>
+            <div class="col-sm-6">€252</div>
+          </div>
+          <hr />
+          <div class="trailer clearfix"><b>
+            <div class="col-sm-6">Total:</div>
+            <div class="col-sm-6">€1452</div>
+          </b></div>
+
+        </div>
+      </div>
+
+
+    </form>
+
+  </div> <!-- end panel body -->
+</div> <!-- end panel -->

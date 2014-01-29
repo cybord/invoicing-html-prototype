@@ -1,0 +1,56 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Invoice to</h3>
+  </div>
+  <div class="panel-body">
+
+  {% if page.state == 'add-invoice' %}
+    <form class="form-horizontal" role="form">
+
+      <div class="form-group">
+        <label for="invoiceClient" class="col-sm-2 control-label">Client</label>
+        <div class="col-sm-10">
+          <select id="invoiceClient" class="form-control">
+            {% for client in site.data.clients %}
+              <option>{{client.company}}</option>
+              testqsdf
+            {% endfor %}
+          </select>
+          <p class="help-block">
+            <a class="btn btn-link" data-toggle="modal" data-target="#add-client">
+              <span class="glyphicon glyphicon-plus-sign"></span>
+              Add a new client
+            </a>
+          </p>
+        </div>
+      </div>
+    </form>
+    {% endif %}
+
+
+    {% if page.state == 'edit' %}
+    <form class="form-horizontal" role="form">
+
+      <div class="form-group">
+        <label for="invoiceClient" class="col-sm-2 control-label">Client</label>
+        <div class="col-sm-10">
+          <select id="invoiceClient" class="form-control" disabled>
+            {% for client in site.data.clients %}
+              <option>{{client.company}}</option>
+              testqsdf
+            {% endfor %}
+          </select>
+          <p class="help-block">
+            <a class="btn btn-link" data-toggle="modal" data-target="#add-client">
+              <span class="glyphicon glyphicon-plus-sign"></span>
+              Add a new client
+            </a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    {% endif %}
+
+  </div> <!-- end panel body -->
+</div> <!-- end panel -->

@@ -1,23 +1,29 @@
 ---
 layout: app
-title: Add invoice
+title: Editing invoice 'Aztec Inc. Sales Prototype'
+state: edit
 ---
 
-<div class="row">
-  <h1 class="col-md-6"><span class="glyphicon glyphicon-file"></span> Edit invoice</h1>
+<div class="page-header clearfix">
+  <h1 class="pull-left"><span class="glyphicon glyphicon-file"></span> Edit invoice 'Aztec Inc. Sales Prototype'</h1>
   <div class="pull-right">
-    <div class="form-group">
-
+    <div class="form-inline">
+      <div class="checkbox">
         <label>
           <input type="checkbox" checked>
           Use standard rate
         </label>
-
+      </div>
+      <div class="checkbox">
         <label>
           <input type="checkbox" checked>
           Use default payment terms
         </label>
-
+      </div>
     </div>
   </div>
 </div>
+
+
+{% include forms/invoice-to.html %}
+{% include forms/invoice-content.html %}
