@@ -42,6 +42,21 @@
 html, body{
   height:100%; // for vertical centering to work
 }
+// icon utilities
+// -------------------------
+
+.icon{
+  display: inline-block;
+  width:16px;
+  min-height: 16px;
+  line-height: 1;
+  vertical-align: bottom;
+}
+.icon-large{
+  @extend .icon;
+  width:48px;
+  min-height: 48px;
+}
 
 // charting
 // -------------------------
