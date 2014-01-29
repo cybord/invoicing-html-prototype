@@ -1,0 +1,37 @@
+.cl-device-wrap {
+  @include box-sizing(border-box);
+  margin: 0 auto;
+  overflow-y: hidden;
+  position: relative;
+
+  &[data-device="iphone4-portrait"] {
+    width: 396px;
+    height: 734px;
+    background: url(/images/mobile/portrait/iphone4.png) no-repeat 0 0;
+    padding: 127px 0 0 2px;
+    .cl-device-body {
+      width: 320px;
+      height: 480px;
+    }
+  }
+  &[data-device="iphone4-landscape"] {
+    padding: 37px 0 0;
+    width: 734px;
+    height: 396px;
+    background: url(/images/mobile/landscape/iphone4.png) no-repeat 0 0;
+    .cl-device-body {
+      width: 480px;
+      height: 320px;
+    }
+  }
+}
+
+
+.cl-device-body{
+  position: relative;
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 36px;
+  }
+}
