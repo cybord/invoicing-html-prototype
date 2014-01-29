@@ -9,6 +9,7 @@ $gray-dark:              #3D4344;
 $gray:                   #849899;
 $gray-light:             #B6CBCE;
 $gray-lighter:           #E2ECED;
+$very-light:             #fff;
 
 // Brand colors
 // -------------------------
@@ -22,12 +23,22 @@ $brand-warning:         $brand-secondary;
 $brand-danger:          #B70071;
 $brand-info:            $brand-secondary;
 
-// Scaffolding
+
+// Form states and alerts
 // -------------------------
 
-$body-bg:               #fff;
-$text-color:            $gray-dark;
+$state-success-text:             $very-light;
+$state-success-bg:               $brand-success;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%);
 
+$state-info-text:                $very-light;
+$state-info-bg:                  $brand-info;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%);
 
-$link-color:            $brand-primary;
-$link-hover-color:      darken($link-color, 15%);
+$state-warning-text:             $very-light;
+$state-warning-bg:               $brand-warning;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
+
+$state-danger-text:              $very-light;
+$state-danger-bg:                $brand-danger;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);

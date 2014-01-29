@@ -36,11 +36,9 @@ bodyclass: styleguide
 <div class="style-guide-content">
 
     <div id="introduction">
-
         <div class="article">
           <h1>{{site.name}} components</h1>
         </div>
-
     </div>
 
     <div id="component-colors" class="component">
@@ -377,6 +375,29 @@ bodyclass: styleguide
         <div class="markup">
 {% highlight html %}
 {% include patterns/alert_success.html %}
+{% endhighlight %}
+        </div>
+    </div>
+
+    <div class="sample">
+        <div class="style">
+            {% include patterns/alert_info.html %}
+        </div>
+        <div class="markup">
+{% highlight html %}
+{% include patterns/alert_info.html %}
+{% endhighlight %}
+        </div>
+    </div>
+
+
+    <div class="sample">
+        <div class="style">
+            {% include patterns/alert_warning.html %}
+        </div>
+        <div class="markup">
+{% highlight html %}
+{% include patterns/alert_warning.html %}
 {% endhighlight %}
         </div>
     </div>

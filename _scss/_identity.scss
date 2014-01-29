@@ -23,3 +23,22 @@ h1, h2, h3, h4{
     height:24px;
   }
 }
+
+// tweaks
+// --------------
+
+.alert-default {
+  background:$brand-primary;
+  color:$very-light;
+}
+.alert{
+  a{
+    color:$very-light;
+    text-decoration: underline;
+  }
+  .glyphicon{
+    font-size: 2em;
+    float: left;
+    margin:0.1em 0.5em 0.1em 0;
+  }
+}
