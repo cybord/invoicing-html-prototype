@@ -2,7 +2,8 @@
 
 // revenue chart by month
 // ------------------------
-historicalBarChart = [
+
+revenueMonthOverMonthChartData = [
   {
     key: "Income by month",
     values: [
@@ -59,40 +60,31 @@ historicalBarChart = [
 ];
 
 
-
-
 nv.addGraph(function() {
-  var chart = nv.models.discreteBarChart()
+  var revenueMonthOverMonthChart = nv.models.discreteBarChart()
       .x(function(d) { return d.label })
       .y(function(d) { return d.value })
       .staggerLabels(false)
-      .tooltips(true)
       .showValues(false)
       .color(['#068BC6'])
       .transitionDuration(250)
       ;
 
-  d3.select('#chart-income-by-month svg')
-      .datum(historicalBarChart)
-      .call(chart);
+  d3.select('#chart-revenue-month-over-month svg')
+      .datum(revenueMonthOverMonthChartData)
+      .call(revenueMonthOverMonthChart);
 
-  nv.utils.windowResize(chart.update);
+  nv.utils.windowResize(revenueMonthOverMonthChart.update);
 
-  return chart;
+  return revenueMonthOverMonthChart;
 });
-
-
 
 
 // income by client
 // ------------------------
 
 
-
-
-
-
-long_short_data = [
+incomeByClientData = [
   {
     key: '2014',
     values: [
@@ -138,15 +130,14 @@ long_short_data = [
 
 
 
-var chart2;
+var incomeByClientChart;
 
 nv.addGraph(function() {
-  chart2 = nv.models.multiBarHorizontalChart()
+  incomeByClientChart = nv.models.multiBarHorizontalChart()
       .x(function(d) { return d.label })
       .y(function(d) { return d.value })
       .margin({top: 30, right: 50, bottom: 50, left: 100})
       //.showValues(true)
-      .tooltips(true)
       // .barColor(d3.scale.category20().range())
       .barColor(['#068BC6'])
       .transitionDuration(250)
@@ -154,16 +145,16 @@ nv.addGraph(function() {
       .stacked(true)
       //.showControls(false);
 
-  chart2.yAxis
+  incomeByClientChart.yAxis
       .tickFormat(d3.format(',.2f'));
 
   d3.select('#chart-income-by-client svg')
-      .datum(long_short_data)
-      .call(chart2);
+      .datum(incomeByClientData)
+      .call(incomeByClientChart);
 
-  nv.utils.windowResize(chart2.update);
+  nv.utils.windowResize(incomeByClientChart.update);
 
-  chart2.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+  incomeByClientChart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
 
-  return chart2;
+  return incomeByClientChart;
 });

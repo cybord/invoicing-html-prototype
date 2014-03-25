@@ -1,25 +1,27 @@
 // charting
 // -------------------------
+
 .chart{
-  svg{
+  svg {
     height:300px;
     display: block;
   }
-  text{
+  text {
     font-size:0.9em;
   }
 }
-#chart-income-by-client{
+
+#chart-income-by-client {
   .nv-series,
   .nv-legend{
     display: none;
   }
 }
 
-.tick line{
+.tick line {
   display: none !important;
 }
 
-.nvtoolip{
+.nvtooltip {
   border-radius:$border-radius-small;
 }

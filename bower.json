@@ -9,7 +9,8 @@
     "bootstrapx-clickover": "latest",
     "bootstrap-sass": "git://github.com/twbs/bootstrap-sass.git#v3.0.3-0"
   },
-  "resolutions": {
-    "modernizr": "~2.7.1"
+  "devDependencies": {
+    "nvd3": "~1.1.15-beta",
+    "d3": "~3.4.3"
   }
 }
