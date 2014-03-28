@@ -1,4 +1,4 @@
-@import "application";
+@import "skin";
 @import "prototype/pygments";
 
 .highlight {
@@ -12,43 +12,41 @@
 body {
   // Reset to white
   background: #FFF;
-  overflow: auto !important;
 }
 
-.style-guide-container {
-  padding: 2.5%;
-  max-width: 95%;
-  .style-guide-nav {
-    width: 15%;
-    .list-group {
-      width: 100%;
-      max-width: 146px;
-    }
-    float: left;
-    .affix, .affix-top {
-      position: fixed;
-      top: 27px;
-    }
+html, body {
+  height: 100%;
+}
+
+.styleguide-container {
+  width: 100%;
+  height: 100%;
+  .col-sm-3 {
+    background: $gray-lighter;
+    height: 100%;
+    overflow: scroll !important;
   }
-  .style-guide-content {
-    padding-left: 3%;
-    width: 82%;
-    float: left;
+  .col-sm-9 {
+    overflow: scroll !important;
+    height: 100%;
+  }
+  .styleguide-nav {
+    padding: 10px 0;
   }
 }
 
-#introduction {
-  padding: 0 0 24px;
-}
-
-/* Component
+/* Component 
    ========================================================================== */
 
 .component {
-  margin: 63px 0;
-  padding: 27px 0;
-  h2 {
-    margin: 0 0 20px;
+  padding: 20px;
+  @media (min-width: $screen-md) {
+    padding: 50px;
+  }
+  border-bottom: 4px solid mix($gray-lighter, $gray-light);
+  > h1,
+  > h2 {
+    padding-top: 20px;
   }
 }
 
@@ -65,6 +63,11 @@ body {
   pre {
     margin: 0;
   }
+  .style {
+    padding: 20px;
+    border: 1px solid mix($gray-lighter, $gray-light);
+    margin: 0 0 12px;
+  }
   .markup {
     line-height: 1.3;
      white-space: pre-wrap;       /* css-3 */
@@ -74,18 +77,12 @@ body {
      word-wrap: break-word;       /* Internet Explorer 5.5+ */
   }
   .markup {
-    width: 40%;
-    float: left;
+    clear: both;
     font-family: Monaco, Menlo, monospace;
     font-size: 11px;
-  }
-  .style {
-    padding-right: 5%;
-    width: 55%;
-    float: left;
+    display: block;
   }
 }
-
 
 /* Overrides so we can shows elements that are normally hidden
    Like popovers and tooltips
@@ -102,6 +99,8 @@ body {
       margin: 20px;
       display: block;
       position: relative;
+    }
+    .tooltip {
       float: left; // be the smallest you can be
     }
     .modal {
@@ -125,7 +124,7 @@ body {
     @include clearfix;
   }
   .colors > div {
-    width: 150px;
+    width: 100px;
     min-height: 120px;
     font-size: 11px;
     float: left;
@@ -142,43 +141,9 @@ body {
   }
 }
 
-/* Component: icon font
+/* Component: tooltip
    ========================================================================== */
 
-#component-icon-font {
-  .icons {
-    clear: both;
-    font-size: 24px;
-    i {
-      width: 64px;
-      height: 64px;
-      display: block;
-      text-align: center;
-      line-height: 64px;
-      float: left;
-    }
-  }
-  .app-icons {
-    font-size: 48px;
-    i {
-      width: 96px;
-      height: 96px;
-      display: block;
-      text-align: center;
-      line-height: 95px;
-      float: left;
-    }
-  }
-}
-
-/* Component: color test for chartss
-   ========================================================================== */
-
-.style-guide-container {
-  .chart div {
-    display: inline-block;
-    width: 100px;
-    height: 20px;
-    margin: 12px;
-  }
+#component-tooltip .style {
+  min-height: 140px;
 }

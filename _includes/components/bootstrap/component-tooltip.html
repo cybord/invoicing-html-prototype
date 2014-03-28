@@ -1,0 +1,34 @@
+<div id="component-tooltip" class="component">
+
+  <h2>Component: tooltips</h2>
+
+  <table class="table table-horizontal">
+    <tr>
+      <th>CSS source file</th>
+      <td><code>_tooltip.scss</code></td>
+    </tr>
+    <tr>
+      <th>JS source file</th>
+      <td>
+      <code>bootstrap-tooltip.js</code>
+      </td>
+    </tr>
+  </table>
+
+  <div class="sample">
+    <div class="style">
+      {% include patterns/tooltip.html %}
+    </div>
+    
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-tooltip-code">Show code</button>
+    <div id="component-tooltip-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/tooltip.html %}
+{% endhighlight %}
+      </div>
+    </div>
+
+  </div>
+
+</div>

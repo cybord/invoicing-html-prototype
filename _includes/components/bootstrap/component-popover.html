@@ -1,0 +1,35 @@
+<div id="component-popover" class="component">
+
+  <h2>Component: popover</h2>
+
+  <table class="table table-horizontal">
+    <tr>
+      <th>CSS source file</th>
+      <td><code>_popovers.scss</code></td>
+    </tr>
+    <tr>
+      <th>JS source file</th>
+      <td>
+      <code>bootstrap-popover.js (depends on bootstrap-tooltip.js)</code>
+      <code>bootstrapx-clickover.js (depends on bootstrap-popover.js)</code>
+      </td>
+    </tr>
+  </table>
+
+  <div class="sample">
+    <div class="style">
+      {% include patterns/popover.html %}
+    </div>
+    
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-popover-code">Show code</button>
+    <div id="component-popover-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/popover.html %}
+{% endhighlight %}
+      </div>
+    </div>
+
+  </div>
+
+</div>

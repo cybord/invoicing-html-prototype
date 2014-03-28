@@ -49,7 +49,7 @@ module.exports = (grunt) ->
                     style: 'expanded'
                     cacheLocation: '.tmp/css/'
                 files:
-                    '.tmp/css/application.css': '_scss/application.scss'
+                    '.tmp/css/skin.css': '_scss/skin.scss'
                     '.tmp/css/styleguide.css': '_scss/styleguide.scss'
 
         jekyll:

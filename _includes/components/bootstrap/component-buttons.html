@@ -1,0 +1,114 @@
+<div id="component-buttons" class="component">
+
+  <h2>Component: buttons</h2>
+
+  <table class="table table-horizontal">
+    <tr>
+      <th>CSS source file</th>
+      <td><code>_buttons.scss</code></td>
+    </tr>
+    <tr>
+      <th>Dependencies</th>
+      <td>For groups: <code>_button-groups.scss</code></td>
+    </tr>
+  </table>
+
+  <h3>Default button</h3>
+  <div class="sample">
+    <div class="style">
+      {% include patterns/button.html %}
+    </div>
+    
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-button-code">Show code</button>
+    <div id="component-button-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/button.html %}
+{% endhighlight %}
+      </div>
+    </div>
+
+  </div>
+
+  <h3>Primary button</h3>
+  <div class="sample">
+    <div class="style">
+      {% include patterns/button-primary.html %}
+    </div>
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-button-primary-code">Show code</button>
+    <div id="component-button-primary-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/button-primary.html %}
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+
+  <h3>Success button</h3>
+  <div class="sample">
+    <div class="style">
+      {% include patterns/button-success.html %}
+    </div>
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-button-success-code">Show code</button>
+    <div id="component-button-success-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/button-success.html %}
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+
+  <h3>Warning button</h3>
+  <div class="sample">
+    <div class="style">
+      {% include patterns/button-warning.html %}
+    </div>
+
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-button-warning-code">Show code</button>
+    <div id="component-button-warning-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/button-warning.html %}
+{% endhighlight %}
+      </div>
+    </div>
+    
+  </div>
+  
+  <h3>Danger button</h3>
+  <div class="sample">
+    <div class="style">
+      {% include patterns/button-danger.html %}
+    </div>
+    
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-button-danger-code">Show code</button>
+    <div id="component-button-danger-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/button-danger.html %}
+{% endhighlight %}
+      </div>
+    </div>
+
+  </div>
+  
+  <h3>Button group</h3>
+  <div class="sample">
+    <div class="style">
+      {% include patterns/button-group.html %}
+    </div>
+    
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-button-group-code">Show code</button>
+    <div id="component-button-group-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/button-group.html %}
+{% endhighlight %}
+      </div>
+    </div>
+
+  </div>
+
+</div>

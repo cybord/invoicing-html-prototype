@@ -1,0 +1,63 @@
+<div id="component-alerts" class="component">
+
+  <h2>Component: alerts</h2>
+
+  <table class="table table-horizontal">
+    <tr>
+      <th>CSS source file</th>
+      <td><code>_alerts.scss</code></td>
+    </tr>
+  </table>
+
+  <div class="sample">
+    <div class="style">
+      {% include patterns/alert-info.html %}
+    </div>
+  
+    <!-- Begin toggle show code -->
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-alert-info-code">Show code</button>
+    <div id="component-alert-info-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/alert-info.html %}
+{% endhighlight %}
+      </div>
+    </div>
+    <!-- End toggle show code -->
+
+  </div>
+
+  <div class="sample">
+    <div class="style">
+      {% include patterns/alert-error.html %}
+    </div>
+    <!-- Begin toggle show code -->
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-alert-error-code">Show code</button>
+    <div id="component-alert-error-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/alert-error.html %}
+{% endhighlight %}
+      </div>
+    </div>
+    <!-- End toggle show code -->
+
+  </div>
+
+  <div class="sample">
+    <div class="style">
+      {% include patterns/alert-success.html %}
+    </div>
+    
+    <!-- Begin toggle show code -->
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-alert-success-code">Show code</button>
+    <div id="component-alert-success-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/alert-success.html %}
+{% endhighlight %}
+      </div>
+    </div>
+    <!-- End toggle show code -->
+  </div>
+</div>

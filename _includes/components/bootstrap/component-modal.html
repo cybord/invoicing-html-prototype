@@ -1,0 +1,31 @@
+<div id="component-modal" class="component">
+
+  <h2>Component: modal</h2>
+
+  <table class="table table-horizontal">
+    <tr>
+      <th>CSS source file</th>
+      <td><code>_modals.scss</code></td>
+    </tr>
+    <tr>
+      <th>Notes</th>
+      <td>Add a <code>.modal-big</code> class for a bigger modal. Add a <code>.modal-liquid</code> class to make the modal stretch.</td>
+    </tr>
+  </table>
+
+  <div class="sample">
+    <div class="style">
+      {% include patterns/modal.html %}
+    </div>
+    
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-modal-code">Show code</button>
+    <div id="component-modal-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/modal.html %}
+{% endhighlight %}
+      </div>
+    </div>
+    
+  </div>
+</div>

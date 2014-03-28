@@ -1,0 +1,72 @@
+/*
+  Sortable tables component
+*/
+
+.table-sortable {
+
+  // Extends caret with a flipped caret, to make a sortable indicator composed of .caret and .caret.flipped
+  .caret.flipped {
+    border-bottom: $caret-width-base solid $dropdown-caret-color;
+    border-right: $caret-width-base solid transparent;
+    border-left:  $caret-width-base solid transparent;
+    // Firefox fix for https://github.com/twbs/bootstrap/issues/9538. Once fixed,
+    // we can just straight up remove this.
+    border-top: 0 dotted;
+  }
+
+  .sort-indicator {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 12px;
+    display: inline-block;
+    height: 10px;
+    white-space: nowrap;
+    .caret {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+    }
+    .caret.flipped {
+      top: 0;
+    }
+  }
+  
+  .sortable a {
+    position: relative;
+    white-space: nowrap;
+    display: block;
+    color: $brand-primary;
+  }
+
+  .sorted-asc,
+  .sorted-desc,
+  .sortable:hover {
+    a {
+      color: $gray-dark;
+      text-decoration: none;
+    }
+    background: mix($gray-lighter, $gray-light, 75%);
+    border-bottom-color: mix($gray-lighter, $gray-light, 50%);
+  }
+
+  .sorted-asc .sort-indicator {
+    .caret {
+      @include opacity(1);
+    }
+    .caret.flipped {
+      @include opacity(0.3);
+    }
+  }
+
+  .sorted-desc .sort-indicator {
+    .caret {
+      @include opacity(0.3);
+    }
+    .caret.flipped {
+      @include opacity(1);
+    }
+  }
+
+}
+

@@ -1,0 +1,89 @@
+/****
+  All CSS component imports
+****/
+
+/* ==========================================================================
+  Order dependent imports
+  For CSS specifity reasons these imports need to be first
+   ========================================================================== */
+
+@import "components/third-party/normalize";
+@import "components/bootstrap/scaffolding";
+
+/* ==========================================================================
+  Bootstrap CSS components
+  These are components that are exactly as in official sass bootstrap releases.
+   ========================================================================== */
+
+@import "components/bootstrap/alerts";
+@import "components/bootstrap/button-groups";
+@import "components/bootstrap/buttons";
+@import "components/bootstrap/breadcrumbs";
+@import "components/bootstrap/close";
+@import "components/bootstrap/code";
+@import "components/bootstrap/component-animations";
+@import "components/bootstrap/dropdowns";
+@import "components/bootstrap/forms";
+@import "components/bootstrap/grid";
+@import "components/bootstrap/input-groups";
+@import "components/bootstrap/list-group";
+@import "components/bootstrap/modals";
+@import "components/bootstrap/navbar";
+@import "components/bootstrap/navs";
+@import "components/bootstrap/pagination";
+@import "components/bootstrap/panels";
+@import "components/bootstrap/popovers";
+@import "components/bootstrap/responsive-utilities";
+@import "components/bootstrap/tables";
+@import "components/bootstrap/tooltip";
+@import "components/bootstrap/type";
+@import "components/bootstrap/utilities";
+@import "components/bootstrap/wells";
+
+/* ==========================================================================
+  Customisations to bootstrap
+  These files should be named EXACTLY like the corresponding bootstrap component
+   ========================================================================== */
+
+@import "components/custom/alerts";
+
+/* ==========================================================================
+  Custom CSS components
+  These are entirely custom CSS components
+   ========================================================================== */
+
+@import "components/custom/bordered-list";
+@import "components/custom/sortable-table";
+@import "components/custom/account-numbers";
+
+/* ==========================================================================
+  Implementation CSS components
+  These are used in the TM implementation but not in the prototype
+  E.g. all charts and maps in the prototype are just images
+   ========================================================================== */
+
+// @import "components/custom/charts";
+
+/* ==========================================================================
+  Third party CSS components
+  These are the CSS imports from third party components e.g. a datepicker for Bootstrap
+  They may have been modified for our purposes
+   ========================================================================== */
+
+// @import "components/third-party/datepicker";
+
+/* ==========================================================================
+  Layouts
+  Definition of the different layouts
+   ========================================================================== */
+
+// @import "layouts/layout-main";
+
+/* ==========================================================================
+  Screens
+  Screen specific CSS. Try to avoid this.
+   ========================================================================== */
+
+@import "screens/login";
+@import "screens/stats";
+@import "screens/mobile";

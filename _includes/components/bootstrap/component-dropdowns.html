@@ -1,0 +1,38 @@
+<div id="component-dropdowns" class="component">
+
+  <h2>Component: dropdowns</h2>
+
+  <table class="table table-horizontal">
+    <tr>
+      <th>CSS source file</th>
+      <td><code>_dropdowns.scss</code></td>
+    </tr>
+    <tr>
+      <th>JS source file</th>
+      <td><code>bootstrap-dropdown.js</code></td>
+    </tr>
+    <tr>
+      <th>Dependencies</th>
+      <td>Buttons</td>
+    </tr>
+  </table>
+
+  <div class="sample">
+    <div class="style">
+      {% include patterns/dropdown.html %}
+    </div>
+    
+    <!-- Begin toggle show code -->
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" data-target="#component-dropdown-code">Show code</button>
+    <div id="component-dropdown-code" class="collapse">
+      <div class="markup">
+{% highlight html %}
+{% include patterns/dropdown.html %}
+{% endhighlight %}
+      </div>
+    </div>
+    <!-- End toggle show code -->
+
+  </div>
+
+</div>

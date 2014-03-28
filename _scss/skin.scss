@@ -1,3 +1,79 @@
+/****
+  Variables and mixins
+****/
+
+@import "vars-custom";
+@import "vars-bootstrap";
+
+@import "mixins-bootstrap";
+@import "mixins-custom";
+
+/****
+  All imports
+****/
+
+@import "all-imports";
+
+// custom font
+// --------------
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+
+@mixin webfont-regular($weight:400){
+  // currently available weights
+  // 400: normal
+  // 700: bold
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight:$weight;
+}
+@mixin webfont-headings($weight:400){
+  // currently available weights
+  // 400: normal
+  // 700: bold
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-weight:$weight;
+}
+
+body{
+  @include webfont-regular(400);
+}
+h1, h2, h3, h4{
+  @include webfont-headings(400);
+}
+
+// navigation / logo
+// --------------
+.navbar-brand{
+  padding:12px 15px;
+
+  img{
+    height:24px;
+  }
+}
+
+// tweaks
+// --------------
+
+.alert-default {
+  background:$brand-primary;
+  color:$very-light;
+}
+.alert{
+  a{
+    color:$very-light;
+    text-decoration: underline;
+  }
+  .icon{
+    font-size: 2em;
+    float: left;
+    margin:0.1em 0.5em 0.1em 0;
+  }
+}
+
+
+// Utilities
+
 // Fix the font path temporarily
 // -------------------------
 @font-face {

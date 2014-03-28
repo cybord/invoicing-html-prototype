@@ -1,0 +1,29 @@
+/* Bordered list
+   Support for <nav><a>... as wel ass <ul><li><a> markup patterns
+   ========================================================================== */
+
+.bordered-list {
+  margin: 0;
+  padding: 0 0 12px;
+  > a,
+  li > a {
+    padding: 4px;
+    display: block;
+    border-bottom: 1px solid mix($gray-lighter, $gray-light);
+    &:hover {
+      text-decoration: none;
+      background: $brand-primary; 
+      color: #FFF;
+      border-color: $brand-primary;
+    }
+  }
+  > a:last-child {
+    border: none;
+  }
+  li {
+    list-style: none;
+    &:last-child {
+      border: none;
+    }
+  }
+}
