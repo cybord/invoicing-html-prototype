@@ -29,8 +29,8 @@
 @import "components/bootstrap/input-groups";
 @import "components/bootstrap/list-group";
 @import "components/bootstrap/modals";
-@import "components/bootstrap/navbar";
 @import "components/bootstrap/navs";
+@import "components/bootstrap/navbar";
 @import "components/bootstrap/pagination";
 @import "components/bootstrap/panels";
 @import "components/bootstrap/popovers";
@@ -57,6 +57,7 @@
   These are entirely custom CSS components
    ========================================================================== */
 
+@import "components/custom/svg-icons";
 @import "components/custom/bordered-list";
 @import "components/custom/sortable-table";
 @import "components/custom/account-numbers";
