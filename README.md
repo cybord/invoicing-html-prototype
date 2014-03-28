@@ -12,6 +12,7 @@ Install the dependencies:
 
     npm install
     bower install
+    bundle install
   
 When the depencies are installed, run
 
