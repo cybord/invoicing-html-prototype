@@ -2,9 +2,19 @@
    Alerts
    ========================================================================== */
 
+.alert-default {
+  background: $brand-primary;
+  color: $very-light;
+}
+
 .alert {
   a {
-    color: #FFF;
+    color: $very-light;
     text-decoration: underline;
+  }
+  .icon {
+    font-size: 2em;
+    float: left;
+    margin: 0.1em 0.5em 0.1em 0;
   }
 }

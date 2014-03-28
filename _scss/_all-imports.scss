@@ -16,14 +16,15 @@
    ========================================================================== */
 
 @import "components/bootstrap/alerts";
+@import "components/bootstrap/breadcrumbs";
 @import "components/bootstrap/button-groups";
 @import "components/bootstrap/buttons";
-@import "components/bootstrap/breadcrumbs";
 @import "components/bootstrap/close";
 @import "components/bootstrap/code";
 @import "components/bootstrap/component-animations";
 @import "components/bootstrap/dropdowns";
 @import "components/bootstrap/forms";
+@import "components/bootstrap/glyphicons";
 @import "components/bootstrap/grid";
 @import "components/bootstrap/input-groups";
 @import "components/bootstrap/list-group";
@@ -46,6 +47,10 @@
    ========================================================================== */
 
 @import "components/custom/alerts";
+@import "components/custom/navbar";
+@import "components/custom/glyphicons";
+@import "components/custom/utilities";
+@import "components/custom/type";
 
 /* ==========================================================================
   Custom CSS components

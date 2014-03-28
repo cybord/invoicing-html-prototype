@@ -1,0 +1,46 @@
+// vertical centering
+// -------------------------
+
+html, body {
+  height: 100%; // for vertical centering to work
+}
+
+.vert-center-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.vert-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  float: none !important;
+}
+
+// other utility classes
+// -------------------------
+
+.leader {
+  margin-top:0.8em;
+}
+
+.leader-large {
+  margin-top:1.6em;
+}
+
+.trailer {
+  margin-bottom:0.8em;
+}
+
+.trailer-large {
+  margin-bottom:1.6em;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.p0{
+  padding: 0;
+}

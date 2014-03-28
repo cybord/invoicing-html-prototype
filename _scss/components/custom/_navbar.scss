@@ -1,0 +1,16 @@
+
+// navigation / logo
+// --------------
+
+.navbar-brand {
+  padding: 12px 15px;
+  img {
+    height: 24px;
+  }
+}
+
+// fix popover inside navbar narrow screens
+// -------------------------
+.navbar-collapse.in {
+  overflow-y: visible;
+}
