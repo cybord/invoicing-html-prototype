@@ -1,0 +1,70 @@
+/* ==========================================================================
+  Overrides/additions for bootstrap _panels component
+   ========================================================================== */
+
+/* ==========================================================================
+  Overrides/additions for bootstrap _panels component
+   ========================================================================== */
+
+.panel .panel-body > p:last-child {
+  margin-bottom: 0;
+}
+
+.panel-heading {
+  @include clearfix;
+  padding: 15px; // higher than normal 10px 15px;
+  .panel-title {
+    font-size: 19px;
+    line-height: 1;
+  }
+  h1, h2, h3, h4 {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Extra controls in panel headings
+
+.panel .panel-heading {
+  .panel-heading-controls:first-child {
+    float: left;
+    margin-left: -10px;
+    margin-right: 8px;
+  }
+  .panel-heading-controls:last-child {
+    float: right;
+    margin-right: -10px;
+  }
+  .panel-heading-controls {
+    margin-bottom: -18px;
+    position: relative;
+    bottom: 9px;
+    .panel-control-static {
+      line-height: 32px;
+      display: inline-block;
+    }
+  }
+}
+
+// Double panel bodies
+
+.panel-body + .panel-body {
+  border-top: 1px solid mix($gray-lighter, $gray-light);
+}
+
+// Tables in panels
+
+.panel {
+  > .table-responsive,
+  > .table {
+    th:first-child,
+    td:first-child {
+      padding-left: 15px;
+    }
+    th:last-child,
+    td:last-child {
+      padding-right: 15px;
+    }
+  }
+}

@@ -114,68 +114,39 @@ title: Settings
   </div> <!-- end panel body -->
 </div> <!-- end panel -->
 
-
-
-
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Users</h3>
   </div>
-  <div class="panel-body">
-
-
-    <div class="table-responsive">
-      <table class="table table-striped table-condensed table-responsive m0">
-        <thead>
-          <tr>
-            <th>
-              <a href="#" title="Sort ascending">
-                Name
-                <span class="sortable">
-                  <b class="caret"></b>
-                  <b class="caret flipped"></b>
-                </span>
-              </a>
-            </th>
-            <th class="sorted-asc">
-              <a href="#" title="Sorted ascending">
-                Last logged in
-                <span class="sortable">
-                  <b class="caret"></b>
-                  <b class="caret flipped"></b>
-                </span>
-              </a>
-            </th>
-            <th>
-              <a href="#" title="Sort ascending">
-                Role
-                <span class="sortable">
-                  <b class="caret"></b>
-                  <b class="caret flipped"></b>
-                </span>
-              </a>
-            </th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for num in (1..4) %}
-          <tr>
-            <td><a href="user-settings.html">{% cycle 'John Doe', 'Jane Doe', 'Peter Smith', 'Dwight Shrute' %}</a></td>
-            <td>{% cycle '10/01/2014 23:00', '15/01/2014 12:57', '18/01/2014 11:00', '23/01/2014 23:15' %}</td>
-            <td>
-              {% cycle 'Admin', 'Admin', 'Admin', 'User' %}
-            </td>
-            <td>
-              <a href="user-settings.html" class="btn btn-default btn-xs">Edit</a>
-              <a href="#" class="btn btn-default btn-xs">Delete</a>
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div><!-- end responsive table -->
-
-
-  </div> <!-- end panel body -->
+  <div class="table-responsive">
+    <table class="table table-striped table-condensed table-responsive table-sortable m0">
+      <thead>
+        <tr>
+          <th class="sortable sorted-asc">
+            <a href="#" title="Sorted ascending">
+              Name <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
+            </a>
+          </th>
+          <th class="sortable"><a href="#">Last logged in</a></th>
+          <th class="sortable"><a href="#">Role</a></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for num in (1..4) %}
+        <tr>
+          <td><a href="user-settings.html">{% cycle 'John Doe', 'Jane Doe', 'Peter Smith', 'Dwight Shrute' %}</a></td>
+          <td>{% cycle '10/01/2014 23:00', '15/01/2014 12:57', '18/01/2014 11:00', '23/01/2014 23:15' %}</td>
+          <td>
+            {% cycle 'Admin', 'Admin', 'Admin', 'User' %}
+          </td>
+          <td>
+            <a href="user-settings.html" class="btn btn-default btn-xs">Edit</a>
+            <a href="#" class="btn btn-default btn-xs">Delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div><!-- end responsive table -->
 </div> <!-- end panel -->

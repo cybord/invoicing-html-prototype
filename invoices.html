@@ -11,7 +11,9 @@ title: Invoices
 <div class="row">
   <div class="col-sm-6">
     <div class="panel panel-default">
-      <div class="panel-heading">Current time period</div>
+      <div class="panel-heading">
+        <h3 class="panel-title">Current time period</h3>
+      </div>
       <div class="panel-body">
         <select class="form-control">
           <option>2014</option>
@@ -49,50 +51,46 @@ title: Invoices
   <div class="panel-heading">
     <h3 class="panel-title">Invoices to be paid</h3>
   </div>
-  <div class="panel-body">
-
-    <div class="table-responsive">
-      
-      <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
-        <thead>
-          <tr>
-            <th class="sortable"><a href="#">Name</a></th>
-            <th class="sortable"><a href="#">No.</a></th>
-            <th class="sortable sorted-asc">
-              <a href="#" title="Sorted ascending">
-                Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
-              </a>
-            </th>
-            <th class="sortable"><a href="#">Value VAT in.</a></th>
-            <th class="sortable"><a href="#">Value VAT ex.</a></th>
-            <th class="sortable"><a href="#">VAT</a></th>
-            <th class="sortable"><a href="#">Due date</a></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for num in (1..5) %}
-          <tr>
-            <td><a href="edit-invoice.html">Client name</td>
-            <td>{% cycle '221', '220', '219', '218' %}</td>
-            <td>
-              {% cycle '<span class="label label-info">Not paid</span>', '<span class="label label-danger">Late</span>' %}
-            </td>
-            <td>€1210</td>
-            <td>€1000</td>
-            <td>€210</td>
-            <td>In 5 days</td>
-            <td>
-              <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
-              <a href="#" class="btn btn-default btn-xs">Delete</a>
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div><!-- end responsive table -->
-
-  </div>
+  <div class="table-responsive">
+    
+    <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
+      <thead>
+        <tr>
+          <th class="sortable"><a href="#">Name</a></th>
+          <th class="sortable"><a href="#">No.</a></th>
+          <th class="sortable sorted-asc">
+            <a href="#" title="Sorted ascending">
+              Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
+            </a>
+          </th>
+          <th class="sortable"><a href="#">Value VAT in.</a></th>
+          <th class="sortable"><a href="#">Value VAT ex.</a></th>
+          <th class="sortable"><a href="#">VAT</a></th>
+          <th class="sortable"><a href="#">Due date</a></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for num in (1..5) %}
+        <tr>
+          <td><a href="edit-invoice.html">Client name</td>
+          <td>{% cycle '221', '220', '219', '218' %}</td>
+          <td>
+            {% cycle '<span class="label label-info">Not paid</span>', '<span class="label label-danger">Late</span>' %}
+          </td>
+          <td>€1210</td>
+          <td>€1000</td>
+          <td>€210</td>
+          <td>In 5 days</td>
+          <td>
+            <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
+            <a href="#" class="btn btn-default btn-xs">Delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div><!-- end responsive table -->
 </div>
 
 
@@ -100,46 +98,45 @@ title: Invoices
   <div class="panel-heading">
     <h3 class="panel-title">Paid invoices</h3>
   </div>
-  <div class="panel-body">
-    <div class="table-responsive">
+  <div class="table-responsive">
+    <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
+      <thead>
+        <tr>
+          <th class="sortable"><a href="#">Name</a></th>
+          <th class="sortable"><a href="#">No.</a></th>
+          <th class="sortable sorted-asc">
+            <a href="#" title="Sorted ascending">
+              Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
+            </a>
+          </th>
+          <th class="sortable"><a href="#">Value VAT in.</a></th>
+          <th class="sortable"><a href="#">Value VAT ex.</a></th>
+          <th class="sortable"><a href="#">VAT</a></th>
+          <th class="sortable"><a href="#">Due date</a></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for num in (1..10) %}
+        <tr>
+          <td><a href="edit-invoice.html">Client name</td>
+          <td>{% cycle '217', '216', '215', '214', '213', '212', '211', '210', '209', '208' %}</td>
+          <td><span class="label label-success">Paid</span></td>
+          <td>€1210</td>
+          <td>€1000</td>
+          <td>€210</td>
+          <td>OK</td>
+          <td>
+            <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
+            <a href="#" class="btn btn-default btn-xs">Delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div><!-- end responsive table -->
 
-      <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
-        <thead>
-          <tr>
-            <th class="sortable"><a href="#">Name</a></th>
-            <th class="sortable"><a href="#">No.</a></th>
-            <th class="sortable sorted-asc">
-              <a href="#" title="Sorted ascending">
-                Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
-              </a>
-            </th>
-            <th class="sortable"><a href="#">Value VAT in.</a></th>
-            <th class="sortable"><a href="#">Value VAT ex.</a></th>
-            <th class="sortable"><a href="#">VAT</a></th>
-            <th class="sortable"><a href="#">Due date</a></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for num in (1..10) %}
-          <tr>
-            <td><a href="edit-invoice.html">Client name</td>
-            <td>{% cycle '217', '216', '215', '214', '213', '212', '211', '210', '209', '208' %}</td>
-            <td><span class="label label-success">Paid</span></td>
-            <td>€1210</td>
-            <td>€1000</td>
-            <td>€210</td>
-            <td>OK</td>
-            <td>
-              <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
-              <a href="#" class="btn btn-default btn-xs">Delete</a>
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div><!-- end responsive table -->
-
+  <div class="panel-footer">
     <ul class="pagination m0">
       <li><a href="#">&laquo;</a></li>
       <li class="active"><a href="#">1</a></li>
@@ -149,7 +146,5 @@ title: Invoices
       <li><a href="#">5</a></li>
       <li><a href="#">&raquo;</a></li>
     </ul>
-
   </div>
 </div>
-
