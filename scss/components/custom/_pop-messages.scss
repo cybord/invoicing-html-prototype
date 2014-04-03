@@ -55,7 +55,7 @@
    ========================================================================== */
 
 .pop-message {
-  background: rgba(#373c44,0.8);
+  background: rgba($gray-dark,0.8);
   width: 180px;
   padding: 20px 0;
   border-radius: 10px;
@@ -72,15 +72,5 @@
   }
   i {
     font-size: 64px;
-  }
-}
-
-/* Pop message (loading)
-   ========================================================================== */
-
-.pop-message {
-  .spinner {
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }

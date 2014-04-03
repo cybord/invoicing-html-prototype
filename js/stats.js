@@ -1,5 +1,3 @@
-// taken from NVD3 examples
-
 // revenue chart by month
 // ------------------------
 
@@ -83,7 +81,6 @@ nv.addGraph(function() {
 // income by client
 // ------------------------
 
-
 incomeByClientData = [
   {
     key: '2014',
@@ -127,8 +124,6 @@ incomeByClientData = [
     ]
   }
 ];
-
-
 
 var incomeByClientChart;
 
