@@ -1,0 +1,75 @@
+/* ==========================================================================
+ Global navigation
+ Used for navigating through the prototype in abscence of links
+   ========================================================================== */
+
+$globalnav-width: 200px;
+
+html.global-nav-active {
+  margin-left: $globalnav-width;
+  .modal-dialog {
+    position: relative;
+    left: $globalnav-width / 2;
+  }
+  .navbar-fixed-bottom {
+    left: $globalnav-width;
+  }
+  #global-nav {
+    display: block;
+  }
+  #content-wrapper {
+    left: $globalnav-width;
+  }
+}
+
+#global-nav {
+  p:first-child {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #DDD;
+    strong {
+      color: #FFF;
+    }
+  }
+  -webkit-font-smoothing: anti-aliased;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 3001;
+  left: 0;
+  display: none;
+  font-size: 12px;
+  width: $globalnav-width;
+  background: #111;
+  ol {
+    padding-left: 20px;
+    li {
+      list-style: decimal;
+    }
+  }
+  h4 {
+    color: #999;
+    margin: 0;
+    font-size: 12px;
+    padding: 4px;
+  }
+  .inner {
+    color: #FFF;
+    padding: 20px 12px;
+  }
+  a {
+    color: #FFF;
+    border-color: #333;
+  }
+}
+
+.page-states-menu {
+  @extend #global-nav;
+  background: lighten(#111, 10%);
+  top: auto;
+  left: 0;
+  bottom: 0;
+  z-index: 3002;
+  font-size: 11px;
+}

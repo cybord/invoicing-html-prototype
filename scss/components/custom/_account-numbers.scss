@@ -4,7 +4,10 @@
   * $   1200
   * $    600
 */
-.account-numbers-value{
-  float:right;
-  font-family:monospace;
+
+.account-numbers-currency {
+  opacity: 0.5;
+}
+.account-numbers-value {
+  float: right;
 }

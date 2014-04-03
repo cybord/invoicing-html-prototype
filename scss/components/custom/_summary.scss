@@ -7,10 +7,26 @@
   background: $gray-dark;
   color: #FFF;
   max-width: 200px;
-  position: absolute;
-  top: 200px;
-  right: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
   h4 {
     border-bottom: 1px solid rgba(255,255,255,0.3);
+    font-size: 16px;
+    padding: 0 0 4px;
+    margin: 0 0 4px;
+  }
+  .account-numbers {
+    font-size: 23px;
+  }
+  p {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(255,255,255,0.66);
+  }
+  .close {
+    text-shadow: none;
+    color: #FFF;
+    opacity: 0.4;
   }
 }
