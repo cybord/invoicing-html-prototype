@@ -58,19 +58,14 @@
   These are entirely custom CSS components
    ========================================================================== */
 
+@import "components/custom/page-header-custom";
+@import "components/custom/summary";
+@import "components/custom/filters";
 @import "components/custom/svg-icons";
 @import "components/custom/bordered-list";
 @import "components/custom/sortable-table";
 @import "components/custom/account-numbers";
 @import "components/custom/pop-messages";
-
-/* ==========================================================================
-  Implementation CSS components
-  These are used in the TM implementation but not in the prototype
-  E.g. all charts and maps in the prototype are just images
-   ========================================================================== */
-
-// @import "components/custom/charts";
 
 /* ==========================================================================
   Third party CSS components
@@ -85,7 +80,7 @@
   Definition of the different layouts
    ========================================================================== */
 
-// @import "layouts/layout-main";
+@import "layouts/layout-main";
 
 /* ==========================================================================
   Screens

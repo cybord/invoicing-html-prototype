@@ -3,18 +3,21 @@ layout: app
 title: Invoices
 ---
 
-<div class="page-header clearfix">
-  <h1 class="pull-left"><div class="icon-large icon-invoices"></div> Your invoices</h1>
-  <a href="/add-invoice.html" class="btn btn-success pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Add invoice</a>
+<div class="page-header-custom clearfix">
+  <div class="container">
+    <h1 class="pull-left"><div class="icon-large icon-invoices"></div> Your invoices</h1>
+    <div class="btn-toolbar pull-right">
+      <a href="#" class="btn btn-default"> Filters <b class="caret"></b></a>
+      <a href="/add-invoice.html" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> Add invoice</a>
+    </div>
+  </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Current time period</h3>
-      </div>
-      <div class="panel-body">
+<div class="filters">
+  <div class="container">
+    <div class="form-inline">
+      <div class="form-group">
+        <label>Current time period</label>
         <select class="form-control">
           <option>2014</option>
           <option>2013</option>
@@ -23,128 +26,146 @@ title: Invoices
           <option>Custom…</option>
         </select>
       </div>
-    </div>
-  </div>
-
-  <div class="col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-body">
-
-        <div class="row">
-          <div class="col-xs-6">
-            <p>Outstanding</p>
-            <h2 class="m0">€2400</h2>
-          </div>
-          <div class="col-xs-6">
-            <p>Paid since 01/01/2014</p>
-            <h2 class="m0">€5845</h2>
-          </div>
+      <div class="form-group">
+        <label>By client</label>
+        <select class="form-control">
+          <option>Client name</option>
+          <option>Client name</option>
+          <option>Client name</option>
+          <option>Client name</option>
+          <option>Client name</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Show stats
+          </label>
         </div>
-
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Show table summaries
+          </label>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Invoices to be paid</h3>
+<div class="panel panel-default summary">
+  <div class="panel-body">
+    <h4>Summary</h4>
+    <p>Outstanding</p>
+    <h2 class="m0">€2400,00</h2>
+    <p>Paid since 01/01/2014</p>
+    <h2 class="m0">€5845,00</h2>
   </div>
-  <div class="table-responsive">
-    
-    <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
-      <thead>
-        <tr>
-          <th class="sortable"><a href="#">Name</a></th>
-          <th class="sortable"><a href="#">No.</a></th>
-          <th class="sortable sorted-asc">
-            <a href="#" title="Sorted ascending">
-              Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
-            </a>
-          </th>
-          <th class="sortable"><a href="#">Value VAT in.</a></th>
-          <th class="sortable"><a href="#">Value VAT ex.</a></th>
-          <th class="sortable"><a href="#">VAT</a></th>
-          <th class="sortable"><a href="#">Due date</a></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for num in (1..5) %}
-        <tr>
-          <td><a href="edit-invoice.html">Client name</td>
-          <td>{% cycle '221', '220', '219', '218' %}</td>
-          <td>
-            {% cycle '<span class="label label-info">Not paid</span>', '<span class="label label-danger">Late</span>' %}
-          </td>
-          <td>€1210</td>
-          <td>€1000</td>
-          <td>€210</td>
-          <td>In 5 days</td>
-          <td>
-            <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
-            <a href="#" class="btn btn-default btn-xs">Delete</a>
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div><!-- end responsive table -->
 </div>
 
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Paid invoices</h3>
-  </div>
-  <div class="table-responsive">
-    <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
-      <thead>
-        <tr>
-          <th class="sortable"><a href="#">Name</a></th>
-          <th class="sortable"><a href="#">No.</a></th>
-          <th class="sortable sorted-asc">
-            <a href="#" title="Sorted ascending">
-              Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
-            </a>
-          </th>
-          <th class="sortable"><a href="#">Value VAT in.</a></th>
-          <th class="sortable"><a href="#">Value VAT ex.</a></th>
-          <th class="sortable"><a href="#">VAT</a></th>
-          <th class="sortable"><a href="#">Due date</a></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for num in (1..10) %}
-        <tr>
-          <td><a href="edit-invoice.html">Client name</td>
-          <td>{% cycle '217', '216', '215', '214', '213', '212', '211', '210', '209', '208' %}</td>
-          <td><span class="label label-success">Paid</span></td>
-          <td>€1210</td>
-          <td>€1000</td>
-          <td>€210</td>
-          <td>OK</td>
-          <td>
-            <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
-            <a href="#" class="btn btn-default btn-xs">Delete</a>
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div><!-- end responsive table -->
+<div class="container">
 
-  <div class="panel-footer">
-    <ul class="pagination m0">
-      <li><a href="#">&laquo;</a></li>
-      <li class="active"><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">&raquo;</a></li>
-    </ul>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Invoices to be paid</h3>
+    </div>
+    <div class="table-responsive">
+    
+      <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
+        <thead>
+          <tr>
+            <th class="sortable"><a href="#">Name</a></th>
+            <th class="sortable"><a href="#">No.</a></th>
+            <th class="sortable sorted-asc">
+              <a href="#" title="Sorted ascending">
+                Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
+              </a>
+            </th>
+            <th class="sortable"><a href="#">Value VAT in.</a></th>
+            <th class="sortable"><a href="#">Value VAT ex.</a></th>
+            <th class="sortable"><a href="#">VAT</a></th>
+            <th class="sortable"><a href="#">Due date</a></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for num in (1..5) %}
+          <tr>
+            <td><a href="edit-invoice.html">Client name</td>
+            <td>{% cycle '221', '220', '219', '218' %}</td>
+            <td>
+              {% cycle '<span class="label label-info">Not paid</span>', '<span class="label label-danger">Late</span>' %}
+            </td>
+            <td>€1210</td>
+            <td>€1000</td>
+            <td>€210</td>
+            <td>In 5 days</td>
+            <td>
+              <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
+              <a href="#" class="btn btn-default btn-xs">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div><!-- end responsive table -->
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Paid invoices</h3>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-condensed table-striped table-hover table-sortable table-nowrap m0">
+        <thead>
+          <tr>
+            <th class="sortable"><a href="#">Name</a></th>
+            <th class="sortable"><a href="#">No.</a></th>
+            <th class="sortable sorted-asc">
+              <a href="#" title="Sorted ascending">
+                Status <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
+              </a>
+            </th>
+            <th class="sortable"><a href="#">Value VAT in.</a></th>
+            <th class="sortable"><a href="#">Value VAT ex.</a></th>
+            <th class="sortable"><a href="#">VAT</a></th>
+            <th class="sortable"><a href="#">Due date</a></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for num in (1..10) %}
+          <tr>
+            <td><a href="edit-invoice.html">Client name</td>
+            <td>{% cycle '217', '216', '215', '214', '213', '212', '211', '210', '209', '208' %}</td>
+            <td><span class="label label-success">Paid</span></td>
+            <td>€1210</td>
+            <td>€1000</td>
+            <td>€210</td>
+            <td>OK</td>
+            <td>
+              <a href="edit-invoice.html" class="btn btn-default btn-xs">Edit</a>
+              <a href="#" class="btn btn-default btn-xs">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div><!-- end responsive table -->
+
+    <div class="panel-footer">
+      <ul class="pagination m0">
+        <li><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+    </div>
   </div>
 </div>

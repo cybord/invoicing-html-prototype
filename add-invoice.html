@@ -4,10 +4,10 @@ title: Add invoice
 state: add-invoice
 ---
 
-<div class="page-header clearfix">
-  <h1 class="pull-left"><div class="icon-large icon-invoices"></div> Add invoice</h1>
-  <div class="pull-right">
-    <div class="form-inline">
+<div class="page-header-custom clearfix">
+  <div class="container">
+    <h1 class="pull-left"><div class="icon-large icon-invoices"></div> Add invoice</h1>
+    <div class="form-inline pull-right">
       <div class="checkbox">
         <label>
           <input type="checkbox" checked>
@@ -24,7 +24,8 @@ state: add-invoice
   </div>
 </div>
 
-
-{% include forms/invoice-to.html %}
-{% include forms/invoice-content.html %}
-{% include forms/invoice-submit.html %}
+<div class="container">
+  {% include forms/invoice-to.html %}
+  {% include forms/invoice-content.html %}
+  {% include forms/invoice-submit.html %}
+</div>

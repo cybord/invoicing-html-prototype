@@ -3,42 +3,47 @@ layout: app
 title: Statistics
 ---
 
-<div class="page-header clearfix">
-  <h1 class="pull-left"><div class="icon-large icon-stats"></div> Statistics</h1>
-  <div class="form-inline pull-right">
-    <label>
-      Current time period
-    </label>
-    <select class="form-control">
-      <option selected="true">2014</option>
-      <option>2013</option>
-      <option>2012</option>
-      <option>All</option>
-      <option>Custom…</option>
-    </select>
+<div class="page-header-custom clearfix">
+  <div class="container">
+    <h1 class="pull-left"><div class="icon-large icon-stats"></div> Statistics</h1>
+    <div class="form-inline pull-right">
+      <label>
+        Current time period
+      </label>
+      <select class="form-control">
+        <option selected="true">2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>All</option>
+        <option>Custom…</option>
+      </select>
+    </div>
   </div>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Revenue month over month</h3>
-  </div>
-  <div class="panel-body">
-    <div id="chart-revenue-month-over-month" class="chart">
-      <svg></svg>
+<div class="container">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Revenue month over month</h3>
     </div>
-  </div>
-</div><!-- end panel -->
-
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Income by client</h3>
-  </div>
-  <div class="panel-body">
-    <div id="chart-income-by-client" class="chart">
-      <svg></svg>
+    <div class="panel-body">
+      <div id="chart-revenue-month-over-month" class="chart">
+        <svg></svg>
+      </div>
     </div>
-  </div>
-</div><!-- end panel -->
+  </div><!-- end panel -->
 
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Income by client</h3>
+    </div>
+    <div class="panel-body">
+      <div id="chart-income-by-client" class="chart">
+        <svg></svg>
+      </div>
+    </div>
+  </div><!-- end panel -->
+
+</div>

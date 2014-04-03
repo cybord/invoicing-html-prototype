@@ -42,3 +42,8 @@ $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
 $state-danger-text:              $very-light;
 $state-danger-bg:                $brand-danger;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
+
+// Navbars
+// -------------------------
+
+$navbar-inverse-bg:                         $gray-dark !default;

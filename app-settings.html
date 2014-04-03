@@ -3,150 +3,156 @@ layout: app
 title: Settings
 ---
 
-<div class="page-header">
-  <h1><div class="icon-large icon-settings"></div> Settings</h1>
+<div class="page-header-custom">
+  <div class="container">
+    <h1><div class="icon-large icon-settings"></div> Settings</h1>
+  </div>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Your company data</h3>
-  </div>
-  <div class="panel-body">
-    <form class="form-horizontal" role="form">
-      <div class="form-group">
-        <label for="addInvoiceName" class="col-sm-2 control-label">
-          Name
-          <abbr title="Required field">*</abbr>
-        </label>
-        <div class="col-sm-10">
-          <input class="form-control" id="addInvoiceName" placeholder="Enter name">
-        </div>
-      </div>
+<div class="container">
 
-      <div class="form-group">
-        <label class="col-sm-2 control-label">
-          Logo
-          <abbr title="Required field">*</abbr>
-        </label>
-        <div class="col-sm-10">
-          <input class="form-control" type="file">
-        </div>
-      </div>
-
-      {% include forms/address.html %}
-      {% include forms/country.html %}
-      {% include forms/vat.html %}
-
-      <div class="form-group">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10">
-          <a data-state-push='{ popmessages: "states/pop-success.html" }' class="btn btn-default">Save</a>
-        </div>
-      </div>
-
-    </form>
-
-  </div> <!-- end panel body -->
-</div> <!-- end panel -->
-
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Defaults</h3>
-  </div>
-  <div class="panel-body">
-    <form class="form-horizontal" role="form">
-      <div class="form-group">
-        <p class="col-sm-10 col-sm-offset-2">You can change these defaults for any invoice, this text will be prefilled.</p>
-      </div>
-
-      <div class="form-group">
-        <label for="inputTaxRate" class="col-sm-2 control-label">Tax rate</label>
-        <div class="col-sm-10">
-
-          <select class="form-control" id="inputTaxRate">
-            <option selected="true" value="21">21%</option>
-            <option value="6">6%</option>
-            <option value="none">none</option>
-          </select>
-
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="inputCurrency" class="col-sm-2 control-label">Currency</label>
-        <div class="col-sm-10">
-
-          <select class="form-control" id="inputCurrency">
-            <option value="us-dollar">US Dollar $</option>
-            <option selected="true" value="euro">Euro €</option>
-          </select>
-
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="addInvoiceRate" class="col-sm-2 control-label">Rate/hour</label>
-        <div class="col-sm-10">
-          <div class="input-group">
-            <span class="input-group-addon">€</span>
-            <input class="form-control" id="addInvoiceRate">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Your company data</h3>
+    </div>
+    <div class="panel-body">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="addInvoiceName" class="col-sm-2 control-label">
+            Name
+            <abbr title="Required field">*</abbr>
+          </label>
+          <div class="col-sm-10">
+            <input class="form-control" id="addInvoiceName" placeholder="Enter name">
           </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="addInvoiceTerms" class="col-sm-2 control-label">Payment terms</label>
-        <div class="col-sm-10">
-          <textarea id="addInvoiceTerms" class="form-control" rows="3"></textarea>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">
+            Logo
+            <abbr title="Required field">*</abbr>
+          </label>
+          <div class="col-sm-10">
+            <input class="form-control" type="file">
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-default">Save</button>
+        {% include forms/address.html %}
+        {% include forms/country.html %}
+        {% include forms/vat.html %}
+
+        <div class="form-group">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+            <a data-state-push='{ popmessages: "states/pop-success.html" }' class="btn btn-default">Save</a>
+          </div>
         </div>
-      </div>
 
-    </form>
+      </form>
 
-  </div> <!-- end panel body -->
-</div> <!-- end panel -->
+    </div> <!-- end panel body -->
+  </div> <!-- end panel -->
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Users</h3>
-  </div>
-  <div class="table-responsive">
-    <table class="table table-striped table-condensed table-responsive table-sortable m0">
-      <thead>
-        <tr>
-          <th class="sortable sorted-asc">
-            <a href="#" title="Sorted ascending">
-              Name <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
-            </a>
-          </th>
-          <th class="sortable"><a href="#">Last logged in</a></th>
-          <th class="sortable"><a href="#">Role</a></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for num in (1..4) %}
-        <tr>
-          <td><a href="user-settings.html">{% cycle 'John Doe', 'Jane Doe', 'Peter Smith', 'Dwight Shrute' %}</a></td>
-          <td>{% cycle '10/01/2014 23:00', '15/01/2014 12:57', '18/01/2014 11:00', '23/01/2014 23:15' %}</td>
-          <td>
-            {% cycle 'Admin', 'Admin', 'Admin', 'User' %}
-          </td>
-          <td>
-            <a href="user-settings.html" class="btn btn-default btn-xs">Edit</a>
-            <a href="#" class="btn btn-default btn-xs">Delete</a>
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div><!-- end responsive table -->
-</div> <!-- end panel -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Defaults</h3>
+    </div>
+    <div class="panel-body">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <p class="col-sm-10 col-sm-offset-2">You can change these defaults for any invoice, this text will be prefilled.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="inputTaxRate" class="col-sm-2 control-label">Tax rate</label>
+          <div class="col-sm-10">
+
+            <select class="form-control" id="inputTaxRate">
+              <option selected="true" value="21">21%</option>
+              <option value="6">6%</option>
+              <option value="none">none</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputCurrency" class="col-sm-2 control-label">Currency</label>
+          <div class="col-sm-10">
+
+            <select class="form-control" id="inputCurrency">
+              <option value="us-dollar">US Dollar $</option>
+              <option selected="true" value="euro">Euro €</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="addInvoiceRate" class="col-sm-2 control-label">Rate/hour</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon">€</span>
+              <input class="form-control" id="addInvoiceRate">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="addInvoiceTerms" class="col-sm-2 control-label">Payment terms</label>
+          <div class="col-sm-10">
+            <textarea id="addInvoiceTerms" class="form-control" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-default">Save</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div> <!-- end panel body -->
+  </div> <!-- end panel -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Users</h3>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped table-condensed table-responsive table-sortable m0">
+        <thead>
+          <tr>
+            <th class="sortable sorted-asc">
+              <a href="#" title="Sorted ascending">
+                Name <span class="sort-indicator"><b class="caret"></b><b class="caret flipped"></b></span>
+              </a>
+            </th>
+            <th class="sortable"><a href="#">Last logged in</a></th>
+            <th class="sortable"><a href="#">Role</a></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for num in (1..4) %}
+          <tr>
+            <td><a href="user-settings.html">{% cycle 'John Doe', 'Jane Doe', 'Peter Smith', 'Dwight Shrute' %}</a></td>
+            <td>{% cycle '10/01/2014 23:00', '15/01/2014 12:57', '18/01/2014 11:00', '23/01/2014 23:15' %}</td>
+            <td>
+              {% cycle 'Admin', 'Admin', 'Admin', 'User' %}
+            </td>
+            <td>
+              <a href="user-settings.html" class="btn btn-default btn-xs">Edit</a>
+              <a href="#" class="btn btn-default btn-xs">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div><!-- end responsive table -->
+  </div> <!-- end panel -->
+
+</div>

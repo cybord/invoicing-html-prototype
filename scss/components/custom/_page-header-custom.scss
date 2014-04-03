@@ -1,0 +1,18 @@
+.page-header-custom {
+  background: $brand-secondary;
+  color: #FFF;
+  padding: 12px 0;
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+  }
+  .btn-default {
+    @include button-variant(#FFF, darken($brand-secondary, 10%), darken($brand-secondary, 10%));
+  }
+  > .btn-toolbar,
+  > .btn,
+  > .form-inline {
+    margin-top: 16px;
+  }
+}
