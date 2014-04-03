@@ -1,0 +1,61 @@
+/* Login page
+   ========================================================================== */
+
+body {
+  height: 100%;
+}
+
+.login {
+  background: $gray-lighter;
+  height: 100%;
+  @media all and (min-width: $screen-md) {
+    .no-flexbox & {
+      margin-top: 180px;
+    }
+    .flexbox & {
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-justify-content: center;
+      justify-content: center;
+
+      -webkit-align-items: center;
+      align-items: center;
+
+      height: 100%;
+    }
+  }
+}
+
+.layout-single-form {
+  max-width: 95%;
+  @media (min-width: $screen-sm-min) {
+    width: 420px;
+  }
+  margin: 0 auto;
+  height: auto;
+  #logo {
+    img {
+      display: block;
+      max-height: 90px;
+      max-width: 210px;
+      margin: 12px auto 24px;
+    }
+    margin: 0 0 24px;
+  }
+  fieldset {
+    border: 1px solid mix($gray-lighter, $gray-light);
+    border-width: 1px 0;
+    margin: 12px 0;
+    padding: 12px 0;
+  }
+}
+
+#login-meta {
+  a:link,
+  a:visited {
+    color: $gray;
+    font-size: 11px;
+    text-decoration: underline;
+  }
+}

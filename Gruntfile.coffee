@@ -28,7 +28,7 @@ module.exports = (grunt) ->
                 files: [jekyllMask, '!_site/' + jekyllMask]
                 tasks: ['jekyll', 'copy']
             sass:
-                files: ['_scss/{*/,}{*/,}*.scss']
+                files: ['scss/{*/,}{*/,}*.scss']
                 tasks: ['sass:dist', 'copy']
 
         # Copy the fonts and css in place, because Jekyll deletes them if we
@@ -49,8 +49,8 @@ module.exports = (grunt) ->
                     style: 'expanded'
                     cacheLocation: '.tmp/css/'
                 files:
-                    '.tmp/css/skin.css': '_scss/skin.scss'
-                    '.tmp/css/styleguide.css': '_scss/styleguide.scss'
+                    '.tmp/css/skin.css': 'scss/skin.scss'
+                    '.tmp/css/styleguide.css': 'scss/styleguide.scss'
 
         jekyll:
             dist:
