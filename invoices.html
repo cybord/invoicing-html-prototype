@@ -18,28 +18,32 @@ title: Invoices
     <div class="form-inline">
       <div class="form-group">
         <label>Current time period</label>
-        <select class="form-control">
-          <option>2014</option>
-          <option>2013</option>
-          <option>2012</option>
-          <option>All</option>
-          <option>Custom…</option>
-        </select>
+        <div class="select-custom">
+          <select class="form-control">
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>All</option>
+            <option>Custom…</option>
+          </select>
+        </div>
       </div>
       <div class="form-group">
         <label>By client</label>
-        <select class="form-control">
-          <option>Client name</option>
-          <option>Client name</option>
-          <option>Client name</option>
-          <option>Client name</option>
-          <option>Client name</option>
-        </select>
+        <div class="select-custom">
+          <select class="form-control">
+            <option>Client name</option>
+            <option>Client name</option>
+            <option>Client name</option>
+            <option>Client name</option>
+            <option>Client name</option>
+          </select>
+        </div>
       </div>
       <div class="form-group">
         <div class="checkbox">
           <label>
-            <input type="checkbox"> Show stats
+            <input type="checkbox" data-toggle-trigger="summary"> Show stats
           </label>
         </div>
       </div>
@@ -54,16 +58,13 @@ title: Invoices
   </div>
 </div>
 
-<div class="panel panel-default summary">
-  <div class="panel-body">
-    <h4>Summary</h4>
-    <p>Outstanding</p>
-    <h2 class="m0">€2400,00</h2>
-    <p>Paid since 01/01/2014</p>
-    <h2 class="m0">€5845,00</h2>
-  </div>
+<div class="summary hide" data-toggle="summary">
+  <h4>Summary</h4>
+  <p>Outstanding</p>
+  <h2 class="m0">€2400,00</h2>
+  <p>Paid since 01/01/2014</p>
+  <h2 class="m0">€5845,00</h2>
 </div>
-
 
 <div class="container">
 

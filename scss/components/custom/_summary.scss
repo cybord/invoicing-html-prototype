@@ -3,10 +3,14 @@
 */
 
 .summary {
+  padding: 20px;
   background: $gray-dark;
   color: #FFF;
   max-width: 200px;
   position: absolute;
   top: 200px;
   right: 50px;
+  h4 {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
 }
