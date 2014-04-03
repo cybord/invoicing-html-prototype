@@ -4,8 +4,12 @@
 body {
   height: 100%;
   background: $gray-lighter;
+  > .container {
+    margin-top: 20px;
+  }
 }
 
 .navbar-inverse {
   margin: 0;
+  border: none;
 }

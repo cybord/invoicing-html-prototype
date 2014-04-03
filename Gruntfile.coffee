@@ -10,6 +10,7 @@ module.exports = (grunt) ->
     @loadNpmTasks('grunt-contrib-sass')
     @loadNpmTasks('grunt-contrib-connect')
     @loadNpmTasks('grunt-contrib-copy')
+    @loadNpmTasks('grunt-grunticon')
     @loadNpmTasks('grunt-contrib-watch')
     @loadNpmTasks('grunt-jekyll')
     @loadNpmTasks('grunt-open')
@@ -42,7 +43,15 @@ module.exports = (grunt) ->
                     dest: '_site/'
                     src: '*/*'
                 ]
-
+        
+        grunticon:
+            myIcons:
+                files: [
+                    expand: true,
+                    cwd: 'icons/'
+                    src: ['*.svg', '*.png']
+                    dest: "icons/grumpicon"
+                ]
         sass:
             dist:
                 options:
