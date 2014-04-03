@@ -17,13 +17,12 @@
         <li {% if page.url contains 'invoices.html'  %}class="active"{% endif %}><a href="/invoices.html">Invoices</a></li>
         <li {% if page.url contains 'clients.html'  %}class="active"{% endif %}><a href="/clients.html">Clients</a></li>
         <li {% if page.url contains 'stats.html'  %}class="active"{% endif %}><a href="/stats.html">Statistics</a></li>
-        <li {% if page.url contains 'app-settings.html'  %}class="active"{% endif %}><a href="/app-settings.html">Settings</a></li>
       </ul>
     </div>
 
     <div class="navbar-right navbar-collapse collapse">
       <ul class="nav navbar-nav bordered">
-        <li>
+        <li {% if page.url contains 'app-settings.html'  %}class="active"{% endif %}>
           <a href="app-settings.html" title="Instellingen">
             <i class="glyphicon glyphicon-cog"></i>
             Instellingen
