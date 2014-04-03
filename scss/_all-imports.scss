@@ -51,7 +51,6 @@
 @import "components/custom/navbar";
 @import "components/custom/glyphicons";
 @import "components/custom/panels";
-@import "components/custom/select-custom";
 @import "components/custom/utilities";
 @import "components/custom/type";
 
@@ -60,6 +59,7 @@
   These are entirely custom CSS components
    ========================================================================== */
 
+@import "components/custom/select-custom";
 @import "components/custom/page-header-custom";
 @import "components/custom/summary";
 @import "components/custom/filters";
