@@ -49,3 +49,17 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
 // -------------------------
 
 $navbar-inverse-bg:                         $gray-dark !default;
+$navbar-height:                    44px;
+
+
+
+$navbar-default-color:             #777 !default;
+$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+
+
+
+// Forms
+// -------------------------
+
+$input-color:            $gray-dark;

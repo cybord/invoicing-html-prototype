@@ -6,14 +6,24 @@
   margin-bottom: 0;
 }
 
-.panel.panel-default {
+.panel-minimal {
   border: none;
   background: none;
   box-shadow: none;
   .panel-heading {
+    background: none;
+    border: none;
+  }
+  .panel-footer {
+    background: none;
+    border: none;
+  }
+}
+
+.panel.panel-default {
+  .panel-heading {
     @include clearfix;
     padding: 15px; // higher than normal 10px 15px;
-    background: none;
     .panel-title {
       font-size: 19px;
       line-height: 1;
@@ -23,10 +33,6 @@
       margin: 0;
       padding: 0;
     }
-  }
-  .panel-footer {
-    background: none;
-    border: none;
   }
 }
 

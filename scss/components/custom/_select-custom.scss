@@ -3,6 +3,7 @@
 
 .form-inline .select-custom {
   min-width: 120px;
+  display: inline-block;
 }
 
 .select-custom {
@@ -21,8 +22,7 @@
     background: #FFF;
     border: 1px solid $input-border;
     border-radius: 4px;
-    @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
-
+    box-shadow: none;
     -webkit-appearance: none;
 
     // Remove focus in FF
@@ -38,7 +38,6 @@
   }
 
   &:after {
-    @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
     position: absolute;
     bottom: 1px;
     right: 1px;

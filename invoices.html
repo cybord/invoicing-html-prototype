@@ -7,13 +7,13 @@ title: Invoices
   <div class="container">
     <h1 class="pull-left"><div class="icon-large icon-invoices-i"></div> Your invoices</h1>
     <div class="btn-toolbar pull-right">
-      <a href="#" class="btn btn-default"> Filters <b class="caret"></b></a>
+      <a href="#" class="btn btn-default" data-toggle-trigger="filters"> Filters <b class="caret"></b></a>
       <a href="/add-invoice.html" class="btn btn-success"><span class="glyphicon glyphicon-plus-sign"></span> Add invoice</a>
     </div>
   </div>
 </div>
 
-<div class="filters">
+<div class="filters hide" data-toggle="filters">
   <div class="container">
     <div class="form-inline">
       <div class="form-group">
@@ -43,14 +43,14 @@ title: Invoices
       <div class="form-group">
         <div class="checkbox">
           <label>
-            <input type="checkbox" data-toggle-trigger="summary"> Show stats
+            <input type="checkbox" data-toggle-trigger="full-summary"> Show stats
           </label>
         </div>
       </div>
       <div class="form-group">
         <div class="checkbox">
           <label>
-            <input type="checkbox"> Show table summaries
+            <input type="checkbox" data-toggle-trigger="table-summaries"> Show table summaries
           </label>
         </div>
       </div>
@@ -58,7 +58,7 @@ title: Invoices
   </div>
 </div>
 
-<div class="summary hide" data-toggle="summary">
+<div class="summary hide" data-toggle="full-summary">
   <h4>Summary</h4>
   <p>Outstanding</p>
   <h2 class="m0">€2400,00</h2>
@@ -68,7 +68,7 @@ title: Invoices
 
 <div class="container">
 
-  <div class="panel panel-default">
+  <div class="panel panel-default panel-minimal">
     <div class="panel-heading">
       <h3 class="panel-title">Invoices to be paid</h3>
     </div>
@@ -110,12 +110,24 @@ title: Invoices
           </tr>
           {% endfor %}
         </tbody>
+        <tfoot class="hide" data-toggle="table-summaries">
+          <tr>
+            <td>Averages</td>
+            <td></td>
+            <td></td>
+            <td>€1210</td>
+            <td>€1000</td>
+            <td>€210</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
       </table>
     </div><!-- end responsive table -->
   </div>
 
 
-  <div class="panel panel-default">
+  <div class="panel panel-default panel-minimal">
     <div class="panel-heading">
       <h3 class="panel-title">Paid invoices</h3>
     </div>
@@ -154,6 +166,18 @@ title: Invoices
           </tr>
           {% endfor %}
         </tbody>
+        <tfoot class="hide" data-toggle="table-summaries">
+          <tr>
+            <td>Averages</td>
+            <td></td>
+            <td></td>
+            <td>€1210</td>
+            <td>€1000</td>
+            <td>€210</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
       </table>
     </div><!-- end responsive table -->
 
