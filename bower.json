@@ -6,7 +6,8 @@
     "jquery": "~2.0.3",
     "jquery.cookie": "~1.3.1",
     "jquery.extendedinput.js": "~2.1.0",
-    "bootstrap-sass": "git://github.com/twbs/bootstrap-sass.git#v3.0.3-0"
+    "bootstrap-sass": "git://github.com/twbs/bootstrap-sass.git#v3.0.3-0",
+    "state-loader": "*"
   },
   "devDependencies": {
     "nvd3": "~1.1.15-beta",
